@@ -1,0 +1,1 @@
+(function() {    var toc =  [{"name":"软件介绍","type":"book","tilePath":"","key":"toc1"},{"name":"快速入门","type":"book","tilePath":"","key":"toc2"},{"name":"进阶功能","type":"book","tilePath":"","key":"toc3"},{"name":"更多帮助","type":"book","tilePath":"","url":"更多帮助/更多帮助.htm","key":"toc4"}];    window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });    })();

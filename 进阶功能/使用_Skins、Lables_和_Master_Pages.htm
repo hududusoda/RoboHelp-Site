@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+  <script type="text/javascript" language="JavaScript">
+    //<![CDATA[
+    function reDo() {
+      if (innerWidth != origWidth || innerHeight != origHeight)
+        location.reload();
+    }
+    if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+      origWidth = innerWidth;
+      origHeight = innerHeight;
+      onresize = reDo;
+    }
+    onerror = null;
+  //]]>
+  </script>
+  <style type="text/css">/*<![CDATA[*/
+
+    < !-- div.WebHelpPopupMenu {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      z-index: 4;
+      visibility: hidden;
+    }
+
+    p.WebHelpNavBar {
+      text-align: right;
+    }
+
+    -->
+  
+/*]]>*/</style>
+
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "..";
+    gCommonRootRelPath = "..";
+    gTopicId = "3.0_5";
+  
+//]]></script>
+
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2019"/>
+  <title>使用 Skins、Lables 和 Master Pages</title>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta charset="UTF-8"/>
+  <title>使用 Skins、Lables 和 Master Pages</title>
+  <meta name="generator" content="Adobe RoboHelp 2019"/>
+  <link rel="stylesheet" href="../assets/css/default.css"/>
+  <link rel="stylesheet" href="../assets/css/skins.css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header" onclick="rh._.goToFullLayout()">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="使用 Skins、Lables 和 Master Pages">
+        <span>使用 Skins、Lables 和 Master Pages</span>
+      </div>
+      <div class="gotohome" title="按一下此处即可查看此页面的完整内容">
+        <span>按一下此处即可查看此页面的完整内容</span>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+  <h1 class="1">使用 Skins、Lables 和 Master Pages</h1>
+  <p class="a3"> </p>
+  <p>本章节介绍如何使用 Adobe RoboHelp 的 Skins、Lables 和 Master Pages 进阶功能。</p>
+  <h2 class="2"><span lang="zh-CN">使用 Skins</span></h2>
+  <h3 class="3"><span lang="zh-CN">什么是 Skins</span></h3>
+  <p>RoboHelp 中的 skins 用于在发布帮助系统之前更改和自定义帮助系统的外观。 Skins 可以通过更改输出的颜色、按钮、字体、图标、标志和背景来自定义外观。 无论要发布的是响应式 HTML5 还是 WebHelp，RoboHelp 都会在发布窗口的 Output 面板中提供多个预定义的外观。这些预定义外观可以按原样应用，也可以对其进行编辑以实现首选的输出布局。</p>
+  <p class="a3"><img alt="C:\Users\asus\Desktop\robo\contents\assets\images\new-skin-editor_2003.png" src="../assets/images/skins_files/image1.png" style="width: 100%; max-width: 550.1px;"/></p>
+  <h3 class="3"><span lang="zh-CN">添加 Skins</span></h3>
+  <ol data-start="1" xmlns="">
+    <li>
+      <p>点击标准工具栏左侧的 Output 选项卡</p>
+    </li>
+    <li>
+      <p>选择左侧的 skins <img alt="https://helpx.adobe.com/content/dam/help/en/robohelp/using/Skins%20icon.png" src="../assets/images/skins_files/image2.png" style="width: 100%; max-width: 21px;"/></p>
+    </li>
+    <li>
+      <p>选择 skins 右上角标记 <img alt="https://helpx.adobe.com/content/dam/help/en/robohelp/using/Add%20color.png" src="../assets/images/skins_files/image3.png" style="width: 100%; max-width: 14px;"/></p>
+    </li>
+    <li>
+      <p>在选项框中选择对应选项</p>
+    </li>
+  </ol>
+  <p class="a3"><img alt="C:\Users\asus\Desktop\robo\contents\assets\images\image1.png" src="../assets/images/skins_files/image4.png" style="width: 100%; max-width: 550.1px;"/></p>
+  <h3 class="3"><span lang="zh-CN">编辑 Skins</span></h3>
+  <ol data-start="1" xmlns="">
+    <li>
+      <p>点击标准工具栏左侧的 Output 选项卡</p>
+    </li>
+    <li>
+      <p>选择左侧的 skins <img alt="https://helpx.adobe.com/content/dam/help/en/robohelp/using/Skins%20icon.png" src="../assets/images/skins_files/image5.png" style="width: 100%; max-width: 21px;"/></p>
+    </li>
+    <li>
+      <p>选中需要编辑的 skin，点击 <img alt="https://helpx.adobe.com/content/dam/help/en/robohelp/using/TOC%20options.png" src="../assets/images/skins_files/image6.png" style="width: 100%; max-width: 19px;"/> 并选择 Edit</p>
+    </li>
+  </ol>
+  <p class="a3"><img alt="C:\Users\asus\Desktop\robo\contents\assets\images\image2.png" src="../assets/images/skins_files/image7.png" style="width: 100%; max-width: 550.1px;"/></p>
+  <h3 class="3"><span lang="zh-CN">重命名 Skins</span></h3>
+  <ol data-start="1" xmlns="">
+    <li>
+      <p>点击标准工具栏左侧的 Output 选项卡</p>
+    </li>
+    <li>
+      <p>选择左侧的 skins <img alt="https://helpx.adobe.com/content/dam/help/en/robohelp/using/Skins%20icon.png" src="../assets/images/skins_files/image8.png" style="width: 100%; max-width: 21px;"/></p>
+    </li>
+    <li>
+      <p>选中需要编辑的 skin，点击 <img alt="https://helpx.adobe.com/content/dam/help/en/robohelp/using/TOC%20options.png" src="../assets/images/skins_files/image9.png" style="width: 100%; max-width: 19px;"/>  并选择 Rename 或者按 F2</p>
+    </li>
+  </ol>
+  <p class="a3"><img alt="C:\Users\asus\Desktop\robo\contents\assets\images\image3.png" src="../assets/images/skins_files/image10.png" style="width: 100%; max-width: 550.1px;"/></p>
+  <h3 class="3"><span lang="zh-CN">升级 Skins</span></h3>
+  <p>升级 RoboHelp Classic 项目时，RoboHelp 会自动升级所有响应式 HTML5 外观。 在 RoboHelp Classic 编辑器之外自定义的外观，请在 RoboHelp 2019 的布局面板中使用组件添加自定义 JavaScript 或 CSS 文件。进入 skin 的编辑界面，选择 Layout 中的 User Assets 即可添加自定义 JavaScript 或 CSS 文件。</p>
+  <ol data-start="1" xmlns="">
+    <li>
+      <p>点击标准工具栏左侧的 Output 选项卡</p>
+    </li>
+    <li>
+      <p>选择左侧的 skins <img alt="https://helpx.adobe.com/content/dam/help/en/robohelp/using/Skins%20icon.png" src="../assets/images/skins_files/image11.png" style="width: 100%; max-width: 21px;"/></p>
+    </li>
+    <li>
+      <p>选中需要编辑的 skin，点击 <img alt="https://helpx.adobe.com/content/dam/help/en/robohelp/using/TOC%20options.png" src="../assets/images/skins_files/image12.png" style="width: 100%; max-width: 19px;"/> 并选择 Edit</p>
+    </li>
+    <li>
+      <p>在Layout中选择 User Assets， 即可添加自定义 JavaScript 或 CSS 文件</p>
+    </li>
+  </ol>
+  <p class="a3"><img alt="C:\Users\asus\Desktop\robo\contents\assets\images\image4.png" src="../assets/images/skins_files/image13.png" style="width: 100%; max-width: 550.1px;"/></p>
+  <h3 class="3"><span lang="zh-CN">导入 Skins</span></h3>
+  <ol data-start="1" xmlns="">
+    <li>
+      <p>点击标准工具栏左侧的 Output 选项卡</p>
+    </li>
+    <li>
+      <p>选择左侧的 skins <img alt="https://helpx.adobe.com/content/dam/help/en/robohelp/using/Skins%20icon.png" src="../assets/images/skins_files/image14.png" style="width: 100%; max-width: 21px;"/></p>
+    </li>
+    <li>
+      <p>选择 skins 右上角标记 <img alt="https://helpx.adobe.com/content/dam/help/en/robohelp/using/Add%20color.png" src="../assets/images/skins_files/image15.png" style="width: 100%; max-width: 14px;"/></p>
+    </li>
+    <li>
+      <p>在选项框中选择 Import 即可导入 skin 文件（.skz 或 .slz 格式）</p>
+    </li>
+  </ol>
+  <p class="a3"><img alt="C:\Users\asus\Desktop\robo\contents\assets\images\image5.png" src="../assets/images/skins_files/image16.png" style="width: 100%; max-width: 550.1px;"/></p>
+  <h3 class="3"><span lang="zh-CN">导出 Skins</span></h3>
+  <ol data-start="1" xmlns="">
+    <li>
+      <p>点击标准工具栏左侧的 Output 选项卡</p>
+    </li>
+    <li>
+      <p>选择左侧的 skins <img alt="https://helpx.adobe.com/content/dam/help/en/robohelp/using/Skins%20icon.png" src="../assets/images/skins_files/image17.png" style="width: 100%; max-width: 21px;"/></p>
+    </li>
+    <li>
+      <p>选中需要导出的 skin，点击 <img alt="https://helpx.adobe.com/content/dam/help/en/robohelp/using/TOC%20options.png" src="../assets/images/skins_files/image18.png" style="width: 100%; max-width: 19px;"/> 并选择 Export 即可导出 skin 文件到指定的文件夹</p>
+    </li>
+  </ol>
+  <p class="a3"><img alt="C:\Users\asus\Desktop\robo\contents\assets\images\image6.png" src="../assets/images/skins_files/image19.png" style="width: 100%; max-width: 550.1px;"/></p>
+  <h3 class="3"><span lang="zh-CN">删除 Skins</span></h3>
+  <ol data-start="1" xmlns="">
+    <li>
+      <p>点击标准工具栏左侧的 Output 选项卡</p>
+    </li>
+    <li>
+      <p>选择左侧的 skins <img alt="https://helpx.adobe.com/content/dam/help/en/robohelp/using/Skins%20icon.png" src="../assets/images/skins_files/image20.png" style="width: 100%; max-width: 21px;"/></p>
+    </li>
+    <li>
+      <p>选中需要删除的 skin，点击 <img alt="https://helpx.adobe.com/content/dam/help/en/robohelp/using/TOC%20options.png" src="../assets/images/skins_files/image21.png" style="width: 100%; max-width: 19px;"/> 并选择 Delete</p>
+    </li>
+    <li>
+      <p>在弹出的确认框中选择 Yes 即可删除对应 skin</p>
+    </li>
+  </ol>
+  <p class="a3"><img alt="C:\Users\asus\Desktop\robo\contents\assets\images\image7.png" src="../assets/images/skins_files/image22.png" style="width: 100%; max-width: 550.1px;"/></p>
+  <h3 class="3"><span lang="zh-CN">查找 Skins 文件的本机位置</span></h3>
+  <ol data-start="1" xmlns="">
+    <li>
+      <p>点击标准工具栏左侧的 Output 选项卡</p>
+    </li>
+    <li>
+      <p>选择左侧的 skins <img alt="https://helpx.adobe.com/content/dam/help/en/robohelp/using/Skins%20icon.png" src="../assets/images/skins_files/image23.png" style="width: 100%; max-width: 21px;"/></p>
+    </li>
+    <li>
+      <p>选中需要删除的 skin，点击 <img alt="https://helpx.adobe.com/content/dam/help/en/robohelp/using/TOC%20options.png" src="../assets/images/skins_files/image24.png" style="width: 100%; max-width: 19px;"/> 并选择 Show in Explorer 即可查找 Skin 文件的本机位置</p>
+    </li>
+  </ol>
+  <p class="a3"><img alt="C:\Users\asus\Desktop\robo\contents\assets\images\image8.png" src="../assets/images/skins_files/image25.png" style="width: 100%; max-width: 550.1px;"/></p>
+  <h2 class="2"><span lang="zh-CN">使用 Lables</span></h2>
+  <h3 class="3"><span lang="zh-CN">什么是 Lables</span></h3>
+  <p>Lables 是帮助系统（输出）的各个元素的显示文本。例如，browse sequence 中上一个和下一个按钮、显示/隐藏以及其他按钮、选项卡、工具提示和一些消息的文本内容。在 PDF 输出中，Lables 是 TOC、Index 和 Glossary 页面的标题。</p>
+  <p>项目内容外的输出文本内容来自 Lable 文件。Lable 文件是基于特定语言的，并且包含按不同类别分组的 lables，例如 common，browse sequence 和 master pages。每个类别都列出了适当的 lables 及其值。</p>
+  <p>RoboHelp 使用默认语言（与项目语言相同）添加 Lable 文件。通过添加、导入或导出并编辑 Lable 文件，可以自定义 lables 语言。</p>
+  <h3 class="3"><span lang="zh-CN">添加 Lables</span></h3>
+  <ol data-start="1" xmlns="">
+    <li>
+      <p>点击标准工具栏左侧的 Output 选项卡</p>
+    </li>
+    <li>
+      <p>选择左侧的 lables <img alt="https://helpx.adobe.com/content/dam/help/en/robohelp/using/labels/jcr_content/main-pars/procedure/proc_par/step_0/step_par/image/labels_icon.PNG" src="../assets/images/skins_files/image26.png" style="width: 100%; max-width: 22px;"/></p>
+    </li>
+    <li>
+      <p>选择 lables 右上角标记 <img alt="https://helpx.adobe.com/content/dam/help/en/robohelp/using/Add%20color.png" src="../assets/images/skins_files/image27.png" style="width: 100%; max-width: 14px;"/></p>
+    </li>
+    <li>
+      <p>在弹出的选项框中选择语言即可添加对应的 Lables 文件</p>
+    </li>
+  </ol>
+  <p class="a3"><img alt="C:\Users\asus\Desktop\robo\contents\assets\images\image9.png" src="../assets/images/skins_files/image28.png" style="width: 100%; max-width: 520.0px;"/></p>
+  <h3 class="3"><span lang="zh-CN">编辑 Lables</span></h3>
+  <ol data-start="1" xmlns="">
+    <li>
+      <p>点击标准工具栏左侧的 Output 选项卡</p>
+    </li>
+    <li>
+      <p>选择左侧的 lables <img alt="https://helpx.adobe.com/content/dam/help/en/robohelp/using/labels/jcr_content/main-pars/procedure/proc_par/step_0/step_par/image/labels_icon.PNG" src="../assets/images/skins_files/image29.png" style="width: 100%; max-width: 22px;"/></p>
+    </li>
+    <li>
+      <p>选中需要编辑的 lable，点击 <img alt="https://helpx.adobe.com/content/dam/help/en/robohelp/using/TOC%20options.png" src="../assets/images/skins_files/image30.png" style="width: 100%; max-width: 19px;"/> 并选择 Edit</p>
+    </li>
+  </ol>
+  <p class="a3"><img alt="C:\Users\asus\Desktop\robo\contents\assets\images\image10.png" src="../assets/images/skins_files/image31.png" style="width: 100%; max-width: 550.1px;"/></p>
+  <h3 class="3"><span lang="zh-CN">删除 Lables</span></h3>
+  <ol data-start="1" xmlns="">
+    <li>
+      <p>点击标准工具栏左侧的 Output 选项卡</p>
+    </li>
+    <li>
+      <p>选择左侧的 lables <img alt="https://helpx.adobe.com/content/dam/help/en/robohelp/using/labels/jcr_content/main-pars/procedure/proc_par/step_0/step_par/image/labels_icon.PNG" src="../assets/images/skins_files/image32.png" style="width: 100%; max-width: 22px;"/></p>
+    </li>
+    <li>
+      <p>选中需要删除的 lable，点击 <img alt="https://helpx.adobe.com/content/dam/help/en/robohelp/using/TOC%20options.png" src="../assets/images/skins_files/image33.png" style="width: 100%; max-width: 19px;"/> 并选择 Delete</p>
+    </li>
+    <li>
+      <p>在弹出的确认框中选择 Yes 即可删除对应 lable</p>
+    </li>
+  </ol>
+  <p class="a3"><img alt="C:\Users\asus\Desktop\robo\contents\assets\images\image11.png" src="../assets/images/skins_files/image34.png" style="width: 100%; max-width: 550.1px;"/></p>
+  <h3 class="3"><span lang="zh-CN">导入 Lables</span></h3>
+  <ol data-start="1" xmlns="">
+    <li>
+      <p>点击标准工具栏左侧的 Output 选项卡</p>
+    </li>
+    <li>
+      <p>选择左侧的 lables <img alt="https://helpx.adobe.com/content/dam/help/en/robohelp/using/labels/jcr_content/main-pars/procedure/proc_par/step_0/step_par/image/labels_icon.PNG" src="../assets/images/skins_files/image35.png" style="width: 100%; max-width: 22px;"/></p>
+    </li>
+    <li>
+      <p>选中一个 lable，点击 <img alt="https://helpx.adobe.com/content/dam/help/en/robohelp/using/TOC%20options.png" src="../assets/images/skins_files/image36.png" style="width: 100%; max-width: 19px;"/> 并选择 Import 即可导入 lable 文件（.lng 格式）</p>
+    </li>
+  </ol>
+  <p class="a3"><img alt="C:\Users\asus\Desktop\robo\contents\assets\images\image12.png" src="../assets/images/skins_files/image37.png" style="width: 100%; max-width: 550.1px;"/></p>
+  <h3 class="3"><span lang="zh-CN">导出 Lables</span></h3>
+  <ol data-start="1" xmlns="">
+    <li>
+      <p>点击标准工具栏左侧的 Output 选项卡</p>
+    </li>
+    <li>
+      <p>选择左侧的 lables <img alt="https://helpx.adobe.com/content/dam/help/en/robohelp/using/labels/jcr_content/main-pars/procedure/proc_par/step_0/step_par/image/labels_icon.PNG" src="../assets/images/skins_files/image38.png" style="width: 100%; max-width: 22px;"/></p>
+    </li>
+    <li>
+      <p>选中需要导出的 lable，点击 <img alt="https://helpx.adobe.com/content/dam/help/en/robohelp/using/TOC%20options.png" src="../assets/images/skins_files/image39.png" style="width: 100%; max-width: 19px;"/> 并选择 Export 即可导出 lable 文件到指定的文件夹</p>
+    </li>
+  </ol>
+  <p class="a3"><img alt="C:\Users\asus\Desktop\robo\contents\assets\images\image12.png" src="../assets/images/skins_files/image40.png" style="width: 100%; max-width: 550.1px;"/></p>
+  <h2 class="2"><span lang="zh-CN">使用 Master Pages</span></h2>
+  <h3 class="3"><span lang="zh-CN">什么是 Master Pages</span></h3>
+  <p>HTML 页面包含三个元素：内容，布局和样式。尽管 CSS 文件将样式与内容分开，但布局仍嵌入 HTML 代码中。 通过使用 Master Pages，可以将布局与样式和内容分开。</p>
+  <p>Master Pages 包含布局信息，并与CSS文件相关联。 它是HTML主题的模板，为页眉、页脚和 Topic 定义占位符，并且可以使用 breadcrumbs、Mini TOC、snippets、variables、fields、symbols 和 condition tags 。</p>
+  <p>你可以使用 Master Pages 创建 Toic，也可以将现有 Topic 与 Master Pages 关联。 使用 Master Pages 创建 Topic 时， Topic 的占位符内容将放置在最终 Topic 中。 如果将 Master Pages 应用于现有 Topic ，则将忽略 Topic 占位符内容。 在这种情况下， Topic 的实际内容会在预览和生成时替换 Master Pages 中的 Topic 占位符。</p>
+  <h3 class="3"><span lang="zh-CN">添加 Master Pages</span></h3>
+  <ol data-start="1" xmlns="">
+    <li>
+      <p>点击标准工具栏左侧的 Author 选项卡</p>
+    </li>
+    <li>
+      <p>选择左侧的 Mater Pages <img alt="C:\Users\asus\Desktop\robo\contents\assets\images\image13.png" src="../assets/images/skins_files/image41.png" style="width: 100%; max-width: 16px;"/></p>
+    </li>
+    <li>
+      <p>选择 master pages 右上角标记 <img alt="https://helpx.adobe.com/content/dam/help/en/robohelp/using/Add%20color.png" src="../assets/images/skins_files/image42.png" style="width: 100%; max-width: 14px;"/></p>
+    </li>
+    <li>
+      <p>在弹出的选项框中填写相关信息，点击 create 即可添加 master page</p>
+    </li>
+  </ol>
+  <p class="a3"><img alt="C:\Users\asus\Desktop\robo\contents\assets\images\image14.png" src="../assets/images/skins_files/image43.png" style="width: 100%; max-width: 550.1px;"/></p>
+  <h3 class="3"><span lang="zh-CN">编辑 Master Pages</span></h3>
+  <p>编辑 master page 时，可以使用 Breadcrumbs、Variables、Snippets、Mini TOC、Fields、Symbols 和 Condition Tags。</p>
+  <ol data-start="1" xmlns="">
+    <li>
+      <p>点击标准工具栏左侧的 Author 选项卡</p>
+    </li>
+    <li>
+      <p>选择左侧的 Mater Pages <img alt="C:\Users\asus\Desktop\robo\contents\assets\images\image13.png" src="../assets/images/skins_files/image44.png" style="width: 100%; max-width: 13px;"/></p>
+    </li>
+    <li>
+      <p>选中需要编辑的 master page，点击 <img alt="https://helpx.adobe.com/content/dam/help/en/robohelp/using/TOC%20options.png" src="../assets/images/skins_files/image45.png" style="width: 100%; max-width: 19px;"/> 并选择 Edit</p>
+    </li>
+  </ol>
+  <h4 class="4"><span lang="zh-CN">使用 Breadcrumbs</span></h4>
+  <ul data-start="1" xmlns="">
+    <li>
+      <p>点击标准工具栏的 Insert Breadcrumbs Placeholder <img alt="https://helpx.adobe.com/content/dam/help/en/robohelp/using/master-pages/jcr_content/main-pars/procedure_1489257483/proc_par/step_0/step_par/image/breadcrumbs_icon.PNG" src="../assets/images/skins_files/image46.png" style="width: 100%; max-width: 16px;"/> </p>
+    </li>
+    <li>
+      <p>选中 master page 中的 breadcrum 进行进一步编辑</p>
+    </li>
+  </ul>
+  <p class="a3"><img alt="C:\Users\asus\Desktop\robo\contents\assets\images\image17.png" src="../assets/images/skins_files/image47.png" style="width: 100%; max-width: 550.1px;"/></p>
+  <h4 class="4"><span lang="zh-CN">使用 Mini TOC</span></h4>
+  <ul data-start="1" xmlns="">
+    <li>
+      <p>点击标准工具栏的 Insert Mini TOC Placeholder <img alt="https://helpx.adobe.com/content/dam/help/en/robohelp/using/master-pages/jcr_content/main-pars/procedure_248699054/proc_par/step_0/step_par/image/topic_toc_icon.PNG" src="../assets/images/skins_files/image48.png" style="width: 100%; max-width: 17px;"/>  </p>
+    </li>
+    <li>
+      <p>选中 master page 中的 Mini TOC 进行进一步编辑</p>
+    </li>
+  </ul>
+  <p class="a"><img alt="C:\Users\asus\Desktop\robo\contents\assets\images\image18.png" src="../assets/images/skins_files/image49.png" style="width: 100%; max-width: 550.1px;"/></p>
+  <h4 class="4"><span lang="zh-CN">使用 Field</span></h4>
+  <ul data-start="1" xmlns="">
+    <li>
+      <p>点击标准工具栏的  Insert Variables/Snippets/Fields <img alt="https://helpx.adobe.com/content/dam/help/en/robohelp/using/Insert%20Variable.png" src="../assets/images/skins_files/image50.png" style="width: 100%; max-width: 14px;"/>，并选择 Field</p>
+    </li>
+    <li>
+      <p>弹出的对话框提供插入日期、时间、文件等 Field </p>
+    </li>
+  </ul>
+  <p class="a"><img alt="C:\Users\asus\Desktop\robo\contents\assets\images\image19.png" src="../assets/images/skins_files/image51.png" style="width: 100%; max-width: 550.1px;"/></p>
+  <h4 class="4"><span lang="zh-CN">使用 Symbol</span></h4>
+  <ul data-start="1" xmlns="">
+    <li>
+      <p>点击标准工具栏的  Insert Special Character <img alt="https://helpx.adobe.com/content/dam/help/en/robohelp/using/Insert%20Variable.png" src="../assets/images/skins_files/image52.png" style="width: 100%; max-width: 14px;"/> </p>
+    </li>
+    <li>
+      <p>弹出的对话框提供插入标点、货币、扩展 ASCII 等标记 </p>
+    </li>
+  </ul>
+  <p class="a"><img alt="C:\Users\asus\Desktop\robo\contents\assets\images\image20.png" src="../assets/images/skins_files/image53.png" style="width: 100%; max-width: 550.1px;"/></p>
+  <h3 class="3"><span lang="zh-CN">删除 Master Pages</span></h3>
+  <ol data-start="1" xmlns="">
+    <li>
+      <p>点击标准工具栏左侧的 Author 选项卡</p>
+    </li>
+    <li>
+      <p>选择左侧的 Mater Pages <img alt="C:\Users\asus\Desktop\robo\contents\assets\images\image13.png" src="../assets/images/skins_files/image54.png" style="width: 100%; max-width: 15px;"/></p>
+    </li>
+    <li>
+      <p>选中需要编辑的 master page，点击 <img alt="https://helpx.adobe.com/content/dam/help/en/robohelp/using/TOC%20options.png" src="../assets/images/skins_files/image55.png" style="width: 100%; max-width: 19px;"/> 并选择 Delete</p>
+    </li>
+    <li>
+      <p>在弹出的确认框中选择 Yes 即可删除对应 master page</p>
+    </li>
+  </ol>
+  <p class="a3"><img alt="C:\Users\asus\Desktop\robo\contents\assets\images\image22.png" src="../assets/images/skins_files/image56.png" style="width: 100%; max-width: 550.1px;"/></p>
+  <h3 class="3"><span lang="zh-CN">查找 Master Pages 文件的本机位置</span></h3>
+  <ol data-start="1" xmlns="">
+    <li>
+      <p>点击标准工具栏左侧的 Author 选项卡</p>
+    </li>
+    <li>
+      <p>选择左侧的 Mater Pages <img alt="C:\Users\asus\Desktop\robo\contents\assets\images\image13.png" src="../assets/images/skins_files/image57.png" style="width: 100%; max-width: 17px;"/></p>
+    </li>
+    <li>
+      <p>选中需要编辑的 master page，点击 <img alt="https://helpx.adobe.com/content/dam/help/en/robohelp/using/TOC%20options.png" src="../assets/images/skins_files/image58.png" style="width: 100%; max-width: 19px;"/> 并选择 Show in Explorer 即可查找 Master Pages 文件的本机位置</p>
+    </li>
+  </ol>
+  <p class="a"><img src="../assets/images/skins_files/skin_0.png" style="width: 100%; max-width: 550px;"/></p>
+
+</body></html>

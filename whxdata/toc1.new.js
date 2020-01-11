@@ -1,0 +1,1 @@
+(function() {    var toc =  [{"name":"基本介绍","type":"item","tilePath":"","url":"软件介绍/1_1.htm"},{"name":"软件界面","type":"item","tilePath":"","url":"软件介绍/1_2.htm"}];    window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });    })();

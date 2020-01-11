@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+  <script type="text/javascript" language="JavaScript">
+    //<![CDATA[
+    function reDo() {
+      if (innerWidth != origWidth || innerHeight != origHeight)
+        location.reload();
+    }
+    if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+      origWidth = innerWidth;
+      origHeight = innerHeight;
+      onresize = reDo;
+    }
+    onerror = null;
+  //]]>
+  </script>
+  <style type="text/css">/*<![CDATA[*/
+
+    < !-- div.WebHelpPopupMenu {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      z-index: 4;
+      visibility: hidden;
+    }
+
+    p.WebHelpNavBar {
+      text-align: right;
+    }
+
+    -->
+  
+/*]]>*/</style>
+
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "..";
+    gCommonRootRelPath = "..";
+    gTopicId = "2.0_5";
+  
+//]]></script>
+
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2019"/>
+  <title>输出文件</title>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2019"/>
+  <title>输出文件</title>
+  <meta name="topic-status" content="Draft"/>
+  <link rel="stylesheet" type="text/css" href="../assets/css/default.css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header" onclick="rh._.goToFullLayout()">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="输出文件">
+        <span>输出文件</span>
+      </div>
+      <div class="gotohome" title="按一下此处即可查看此页面的完整内容">
+        <span>按一下此处即可查看此页面的完整内容</span>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+  <h1>输出文件</h1>
+  <p> </p>
+  <p>本章介绍RoboHelp中不同类型的输出预设，以及如何使用它们生成各种格式的输出。例如响应 HTML5、WebHelp、Mobile App 等。</p>
+  <p>RoboHelp具有强大的发布功能，因此您可以生成多种格式的输出。从各种输出预设类型中进行选择，例如响应HTML5、PDF 和 Mobile App，并满足来自各种平台的用户的需求。输出预设方便易用，可以使用多种设置从同一项目创建具有不同内容、布局和用户体验的多个帮助系统。</p>
+  <h2>输出预设的类型</h2>
+  <p>可以使用所需的输出预设类型来生成项目输出。 RoboHelp 中提供以下类型的输出预设：</p>
+  <ol>
+    <li>
+      <p>自适应 HTML5</p>
+    </li>
+    <li>
+      <p>PDF 格式</p>
+    </li>
+    <li>
+      <p>Microsoft HTML Help Web帮助</p>
+    </li>
+    <li>
+      <p>移动应用</p>
+    </li>
+    <li>
+      <p>电子书</p>
+    </li>
+  </ol>
+  <h2>使用输出预设来生成输出</h2>
+  <p>在 RoboHelp 中生成项目输出之前，需要创建和配置输出预设。准备好输出预设后，即可使用该预设来生成输出。<span style="font-size:10.5pt"><span style="font-family:等线"></span></span></p>
+  <h2>创建输出预设</h2>
+  <p>要在RoboHelp中创建输出预设，请按照下列步骤操作：</p>
+  <ol>
+    <li>
+      <p>在一个打开的项目中，执行下列操作之一：</p>
+      <ul class="Disc">
+        <li>
+          <p>单击 Standard toolbar 工具栏右上角的 Quick Generate，然后单击 Edit Settings 图标</p>
+        </li>
+        <li>
+          <p>单击 Standard toolbar 工具栏左侧的 Output 选项卡，输出视图将会打开</p>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <p>在输出工具栏中，单击 Output Presets，将打开 Output Presets 面板</p>
+    </li>
+    <li>
+      <p>在 Output Presets 面板中，单击 <img alt="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/assets/aem_assets_add_icon.png" src="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/assets/aem_assets_add_icon.png" style="max-width: 100%;"/></p>
+    </li>
+    <li>
+      <p>在 New Preset 对话框中，指定以下内容：<br/>
+        Name 指定输出预设的名称<br/>
+        Type 使用下拉列表选择所需的输出预设类型。你可以从自适应 HTML5、PDF、Microsoft HTML Help、WebHelp、移动应用程序和电子书中选择</p>
+    </li>
+    <li>
+      <p>单击完成</p>
+    </li>
+  </ol>
+  <p>可以从 Output 工具栏中的 Output Presets 面板访问输出预设。也可以在创作窗口的 Quick Generate 对话框中访问输出预设。<span style="font-size:10.5pt"><span style="font-family:等线"></span></span></p>
+  <p style="margin:0cm 0cm 0.0001pt; text-align:justify"><span style="font-size:10.5pt"><span style="font-family:等线"></span></span></p>
+  <h2>配置输出预设</h2>
+  <p style="margin:0cm 0cm 0.0001pt; text-align:justify"><span style="font-size:10.5pt"><span style="font-family:等线"> </span></span><span style="font-size:10.5pt"><span style="font-family:等线"> </span></span></p>
+  <ol>
+    <li>
+      <p>在一个打开的项目中，执行下列操作之一：</p>
+      <ul class="Disc">
+        <li>
+          <p>单击 Standard toolbar 右上角的 Quick Generate，然后单击 Edit Settings 图标</p>
+        </li>
+        <li>
+          <p>单击 Standard toolbar.左侧的 Output 选项卡</p>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <p>在输出工具栏中，单击输出预设。在 Output Presets 面板中，执行下列操作之一：</p>
+      <ul class="Disc">
+        <li>
+          <p>双击所需的输出预设</p>
+        </li>
+        <li>
+          <p>单击所需的输出预设旁边的图标，然后选择编辑</p>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <p>根据您选择的输出预设的类型，您可以查看 General、Content 等标签，以配置设置</p>
+    </li>
+    <li>
+      <p>要保存设置，请单击标准工具栏左上角的全部保存图标</p>
+    </li>
+  </ol>
+  <p style="margin:0cm 0cm 0.0001pt; text-align:justify"><span style="font-size:10.5pt"><span style="font-family:等线"></span></span></p>
+  <p style="margin:0cm 0cm 0.0001pt; text-align:justify"><span style="font-size:10.5pt"><span style="font-family:等线"></span></span></p>
+  <h2>产生输出</h2>
+  <p style="margin:0cm 0cm 0.0001pt; text-align:justify"><span style="font-size:10.5pt"><span style="font-family:等线"></span></span></p>
+  <p>要生成输出，请按照下列步骤操作：</p>
+  <ol>
+    <li>
+      <p>在打开的项目的创作窗口中，单击标准工具栏右上角的 Quick Generate</p>
+    </li>
+    <li>
+      <p>在 Quick Generate 对话框中，选择所需的输出预设，然后单击 Generate</p>
+    </li>
+  </ol>
+  <p>进度条显示输出生成的进度。要取消生成输出，请单击。输出生成完成后，要查看输出，请单击。如果输出生成失败，请单击以查看错误日志。</p>
+  <p class="Emphasis2">注意：<br/>
+    在生成输出之前，您还可以通过 Quick Generate 对话框编辑多个输出预设。为此：<br/>
+    选择要编辑的输出预设，然后单击 Edit。每个输出预设的预设编辑器会打开。</p>
+  <h2>使用命令行生成输出</h2>
+  <p>要在不启动 RoboHelp GUI 的情况下生成输出，请在命令行实用程序中指定以下命令：</p>
+  <p>&lt;path_of_Robohelp.exe&gt; --cl &quot;&lt;project_path&gt;&quot; -o &quot;&lt;output_preset&gt;&quot; -l &quot;&lt;logfile_path&gt;&quot; -p &quot;&lt;output_path&gt;&quot;</p>
+  <p>命令说明：</p>
+  <ul>
+    <li>
+      <p>path_of_Robohelp.exe RoboHelp 可执行文件的路径</p>
+    </li>
+    <li>
+      <p>--cl 在命令行模式下启动 RoboHelp</p>
+    </li>
+    <li>
+      <p>project_path 要生成的项目的路径</p>
+    </li>
+    <li>
+      <p>-o 包括输出预设</p>
+    </li>
+    <li>
+      <p>output_preset 要用于生成输出的输出预设的名称</p>
+    </li>
+    <li>
+      <p>-l或--log（可选） 包括日志文件参数</p>
+    </li>
+    <li>
+      <p>logfile_path 如果包括 log file 参数，请指定在其中生成日志的日志文件的路径。日志文件必须采用 HTML 格式，因为日志采用 HTML 格式</p>
+    </li>
+    <li>
+      <p>-p 或 --path（可选） 包括输出路径参数</p>
+    </li>
+    <li>
+      <p>output_path 如果包含输出路径参数，请指定要保存生成的输出的路径。如果您排除此参数，则 RoboHelp 会在所选输出预设的属性中指定的输出路径上生成输出</p>
+    </li>
+  </ul>
+  <h2>管理输出预设</h2>
+  <p>可以轻松地复制可用的输出预设，也可以从Output Presets面板和Quick Generate 对话框中将其删除。</p>
+  <p>重命名输出预设</p>
+  <ol>
+    <li>
+      <p>单击 Standard toolbar 左侧的 Output 选项卡。将打开 Output 视图</p>
+    </li>
+    <li>
+      <p>在Output toolbar,中，单击Output Presets。将打开 Output Presets面板</p>
+    </li>
+    <li>
+      <p>在 Output Presets 面板中，针对要重命名的输出预设，选择 Options <img alt="https://helpx.adobe.com/content/dam/help/en/robohelp/using/TOC%20options.png" src="https://helpx.adobe.com/content/dam/help/en/robohelp/using/TOC%20options.png" style="max-width: 100%;"/> &gt; Rename</p>
+    </li>
+    <li>
+      <p>在 Rename Preset 对话框中，指定 Output Presets 的名称</p>
+    </li>
+    <li>
+      <p>单击完成</p>
+    </li>
+  </ol>
+  <h2>复制输出预设</h2>
+  <ol>
+    <li>
+      <p>请执行以下任一操作：</p>
+      <ul class="Disc">
+        <li>
+          <p>单击标准工具栏右上角的 Quick Generate，然后单击 Edit Settings 图标</p>
+        </li>
+        <li>
+          <p>单击 Standard toolbar 左侧的 Output 选项卡<br/>
+            Output view 将打开</p>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <p>在输出工具栏中，单击输出预设。将打开“输出预设”面板</p>
+    </li>
+    <li>
+      <p>在“输出预设”面板中，单击所需的输出预设旁边的“选项”</p>
+    </li>
+    <li>
+      <p>在“选项”下拉列表中，选择“重复”</p>
+    </li>
+    <li>
+      <p>指定重复的输出预设的名称，然后单击完成</p>
+    </li>
+  </ol>
+  <h2>删除输出预设</h2>
+  <ol>
+    <li>
+      <p>请执行以下任一操作：</p>
+      <ul class="Disc">
+        <li>
+          <p>单击标准工具栏右上角的 Quick Generate，然后单击 Edit Settings 图标</p>
+        </li>
+        <li>
+          <p>单击 Output 工具栏左侧的 Standard toolbar 选项卡。将打开 Output 视图</p>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <p>在 Output toolbar 中，单击输出预设。将打开 Output Presets 面板</p>
+    </li>
+    <li>
+      <p>在 Output Presets 面板中，选择所需的输出预设，然后单击 Options </p>
+    </li>
+    <li>
+      <p>在Options 下拉列表中，选择 Delete。在 Confirm 对话框中，单击 Yes</p>
+    </li>
+  </ol>
+  <h2>在计算机中找到输出预设文件</h2>
+  <ol>
+    <li>
+      <p>单击 Standard toolbar 左侧的 Output 选项卡。将打开 Output 视图</p>
+    </li>
+    <li>
+      <p>在 Output toolbar 中，单击 Output Presets。将打开 Output Presets 面板</p>
+    </li>
+    <li>
+      <p>在 Output Presets 面板中，针对要查找的输出预设，选择 Options <img alt="https://helpx.adobe.com/content/dam/help/en/robohelp/using/TOC%20options.png" src="https://helpx.adobe.com/content/dam/help/en/robohelp/using/TOC%20options.png" style="max-width: 100%;"/> &gt; Show in Explorer</p>
+    </li>
+  </ol>
+  <p>Windows 资源管理器将打开，以显示输出的预设文件及其在计算机中的位置</p>
+
+</body></html>

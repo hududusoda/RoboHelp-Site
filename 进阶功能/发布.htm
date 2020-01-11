@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+  <script type="text/javascript" language="JavaScript">
+    //<![CDATA[
+    function reDo() {
+      if (innerWidth != origWidth || innerHeight != origHeight)
+        location.reload();
+    }
+    if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+      origWidth = innerWidth;
+      origHeight = innerHeight;
+      onresize = reDo;
+    }
+    onerror = null;
+  //]]>
+  </script>
+  <style type="text/css">/*<![CDATA[*/
+
+    < !-- div.WebHelpPopupMenu {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      z-index: 4;
+      visibility: hidden;
+    }
+
+    p.WebHelpNavBar {
+      text-align: right;
+    }
+
+    -->
+  
+/*]]>*/</style>
+
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "..";
+    gCommonRootRelPath = "..";
+    gTopicId = "3.0_7";
+  
+//]]></script>
+
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2019"/>
+  <title>发布</title>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2019"/>
+  <title>发布</title>
+  <meta name="topic-status" content="Draft"/>
+  <link rel="stylesheet" type="text/css" href="../assets/css/default.css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header" onclick="rh._.goToFullLayout()">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="发布">
+        <span>发布</span>
+      </div>
+      <div class="gotohome" title="按一下此处即可查看此页面的完整内容">
+        <span>按一下此处即可查看此页面的完整内容</span>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+  <h1>发布</h1>
+  <p class="Normal-Indent"> </p>
+  <p>本章节介绍如何使用 Adobe RoboHelp 的发布进阶功能，包括导入 FrameMaker 文件、发布到 Robohelp Server 和 FTP、SFTP或 File System 服务器。</p>
+  <h2>导入 FrameMaker 文件至项目</h2>
+  <h3>导入 FrameMaker 文件</h3>
+  <p>你可以将 FrameMaker books （.book）和 documents （.fm, .mif）导入至 Robohelp 项目中。导入文档中引用的所有资产都放置在资产文件夹的相应子文件夹中。例如，样式表放置在 css 子文件夹中，图像放置在 images 子文件夹中。</p>
+  <ol>
+    <li>
+      <p>目录面板中选择 File &gt; Import &gt; FrameMaker Document</p>
+    </li>
+    <li>
+      <p>在弹出的选择框中输入 FrameMaker 文件地址并进行设置</p>
+    </li>
+    <li>
+      <p>点击 Import 即可导入 FrameMaker 文件</p>
+    </li>
+  </ol>
+  <p><img src="../assets/images/发布/01.png" style="width: 100%; max-width: 550px;"/></p>
+  <h3>FrameMaker 导入设置</h3>
+  <p>导入 FrameMaker 文件时可以进行相关设置。</p>
+  <h4>General </h4>
+  <p>选择 general 选项卡为导入的内容进行基本设置。</p>
+  <ul>
+    <li>
+      <p>FrameMaker Document 点击<img src="https://helpx.adobe.com/content/dam/help/en/robohelp/using/format-content/jcr_content/main-pars/image/browse_icon.png" style="max-width: 100%;"/> 选择需要导入的文件</p>
+    </li>
+    <li>
+      <p>CSS file for style mapping 点击 <img src="https://helpx.adobe.com/content/dam/help/en/robohelp/using/format-content/jcr_content/main-pars/image/browse_icon.png" style="max-width: 100%;"/> 选择外部样式表，使 RoboHelp 样式映射 FrameMaker 样式</p>
+    </li>
+    <li>
+      <p>Start new topic from style 根据所选 FrameMaker 文档中的内容创建 topic</p>
+      <ul>
+        <li>
+          <p>FrameMaker Style 从 FrameMaker 文档中选择 RoboHelp 可用于创建 topic 的段落样式。例如，要为每个一级标题创建一个 topic ，可选择一级标题</p>
+        </li>
+        <li>
+          <p>Topic Name Pattern 指定新主题的命名模式</p>
+          <ul>
+            <li>
+              <p>&lt;$ filename_no_ext&gt;-&lt;n&gt; 创建不带扩展名的文件名并按顺序包含数字。例如，如果ABC.fm是导入的FrameMaker文档，则新主题的文件名将变为ABC1，ABC</p>
+            </li>
+            <li>
+              <p>&lt;$ filename_no_ext&gt;-&lt;$ paratext&gt; 创建不带扩展名的文件名，并包含第一段的初始文本</p>
+            </li>
+            <li>
+              <p>&lt;$ paratext&gt; 将应用所选样式元素的初始文本用于创建文件名。默认情况下设置此选项</p>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p>Use only ASCII characters in the generated file names 选择此字段可将新主题文件名中的非ASCII字符转换为ASCII字符</p>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <p>Save Settings 保存 FrameMaker Import Settings 为设置文件（.fsf）</p>
+    </li>
+    <li>
+      <p>Load Settings 点击<img src="https://helpx.adobe.com/content/dam/help/en/robohelp/using/format-content/jcr_content/main-pars/image/browse_icon.png" style="max-width: 100%;"/> 选择需要导入的设置文件（.fsf）</p>
+    </li>
+  </ul>
+  <h4>Character</h4>
+  <p>选择 character 选项卡为导入的内容指定字符样式。在此选项卡中，可以查看以下列：</p>
+  <ol>
+    <li>
+      <p>FrameMaker Style 在 General 选项卡的 FrameMaker Document 字段中选择的FrameMaker 文档中的样式</p>
+    </li>
+    <li>
+      <p>在 RoboHelp 中，从 General 选项卡的 CSS file for style mapping 字段中指定的 CSS文件填充的样式</p>
+    </li>
+  </ol>
+  <p>对于每种 FrameMaker 样式，在 RoboHelp 中单击以选择其他样式并将其映射到相应的 FrameMaker 样式。 如果没有样式与相应的 FrameMaker 样式匹配，则RoboHelp 提供两个样式选项：</p>
+  <ol class="Decimal">
+    <li>
+      <p>Import style （默认）将样式从选定的 FrameMaker 文档导入到 RoboHelp</p>
+    </li>
+    <li>
+      <p>Discard content 放弃应用所选样式的所有内容</p>
+    </li>
+  </ol>
+  <p>可以分别在 FrameMaker Preview和 RoboHelp Preview部分中预览选定的 FrameMaker 样式和映射样式</p>
+  <h4>Paragraph</h4>
+  <p>选择 paragraph 选项卡为导入的内容指定段落样式。在此选项卡中，可以查看以下列：</p>
+  <ol>
+    <li>
+      <p>FrameMaker样式在 General 选项卡的 FrameMaker Document 字段中选择的FrameMaker文档中的样式</p>
+    </li>
+    <li>
+      <p>在 RoboHelp 中，从 General 选项卡的 CSS file for style mapping 字段中指定的 CSS 文件填充的样式</p>
+    </li>
+  </ol>
+  <p>对于每种 FrameMaker 样式，在 RoboHelp 中单击<img src="https://helpx.adobe.com/content/dam/help/en/robohelp/using/Mapped%20Style.png" style="max-width: 100%;"/> 以选择其他样式并将其映射到相应的 FrameMaker 样式。 如果没有样式与相应的 FrameMaker 样式匹配，则RoboHelp 提供两个样式选项：</p>
+  <ol>
+    <li>
+      <p>Import style （默认）将样式从选定的 FrameMaker 文档导入到 RoboHelp</p>
+    </li>
+    <li>
+      <p>Discard content 放弃应用所选样式的所有内容</p>
+    </li>
+  </ol>
+  <p>可以分别在 FrameMaker Preview 和 RoboHelp Preview部分中预览选定的FrameMaker 样式和映射样式</p>
+  <h4>Table</h4>
+  <p>选择 table 选项卡为导入的内容指定表样式。在此选项卡中，可以查看以下列：</p>
+  <ol>
+    <li>
+      <p>FrameMaker 样式在 General 选项卡的 FrameMaker Document 字段中选择的 FrameMaker 文档中的样式</p>
+    </li>
+    <li>
+      <p>在 RoboHelp 中，从 General 选项卡的 CSS file for style mapping 字段中指定的 CSS 文件填充的样式</p>
+    </li>
+  </ol>
+  <p>对于每种 FrameMaker 样式，在 RoboHelp 中单击<img src="https://helpx.adobe.com/content/dam/help/en/robohelp/using/Mapped%20Style.png" style="max-width: 100%;"/> 以选择其他样式并将其映射到相应的 FrameMaker 样式。 如果没有样式与相应的 FrameMaker 样式匹配，则RoboHelp 提供两个样式选项：</p>
+  <ol>
+    <li>
+      <p>Import style （默认）将样式从选定的 FrameMaker 文档导入到 RoboHelp</p>
+    </li>
+    <li>
+      <p>Discard content 放弃应用所选样式的所有内容</p>
+    </li>
+  </ol>
+  <p>可以分别在 FrameMaker Preview 和 RoboHelp Preview 部分中预览选定的FrameMaker 样式和映射样式</p>
+  <h4>Cross Reference</h4>
+  <p>选择 Cross Reference 选项卡为导入的内容指定交叉引用样式。在此选项卡中，可以查看以下列：</p>
+  <ol>
+    <li>
+      <p>FrameMaker Style 在 General 选项卡的 FrameMaker Document 字段中选择的 FrameMaker 文档中的样式</p>
+    </li>
+    <li>
+      <p>在 RoboHelp 中显示样式的当前定义。 默认情况下，此列是从导入的FrameMaker文档中的定义填充的。 您可以通过使用常量和变量的组合来修改定义。 要指定变量，请键入&lt;并从下拉列表中选择一个变量，或键入变量名称</p>
+    </li>
+  </ol>
+  <p>可以分别在 FrameMaker Preview 和 RoboHelp Preview 部分中预览选定的FrameMaker 样式和映射样式。</p>
+  <h4>Images</h4>
+  <p>选择 images 选项卡为导入的内容指定图像样式。在此选项卡中，使用以下字段：</p>
+  <ul>
+    <li>
+      <p>Do Not Regenerate Images 果要重新导入 FrameMaker 文档并且不需要更新导入内容中的图像，请选择此字段</p>
+    </li>
+    <li>
+      <p>Import Reference Page Images 选择此字段可从导入的 FrameMaker 文档中的“参考页”导入图像</p>
+    </li>
+    <li>
+      <p>Preserve 3D Images 保留所选 FrameMaker 文档中的 3D 图像，即 3D 图像不会展平为 2D 图像。发布输出后，浏览器中将显示图像中的 3D 信息。默认情况下，此字段处于选中状态</p>
+    </li>
+    <li>
+      <p>Preferred Dimensions：</p>
+      <ul>
+        <li>
+          <p>Width 和 Height 指定导入图像的首选宽度和高度。默认情况下，宽度和高度字段被链接为接受相同的值。切换以设置不同的宽度和高度值</p>
+        </li>
+        <li>
+          <p>Scale 指定缩放因素以缩放导入的图像</p>
+        </li>
+        <li>
+          <p>Maintain Aspect Ratio 选择此字段可以根据导入的 FrameMaker 文档中的图像保持纵横比</p>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <p>Margin 为图像周围的所有四个边距指定一个值。要为顶部、底部、左侧和右侧的每个边距指定不同的值，则切换 <img src="https://helpx.adobe.com/content/dam/help/en/robohelp/using/format-content/jcr_content/main-pars/procedure_1276712156/proc_par/step_1306647738/step_par/image_1010861831/click_to_link_button.png" style="width: 100%; max-width: 17px;"/> </p>
+      <ul>
+        <li>
+          <p>Width 和 Height 指定导入图像的首选宽度和高度。默认情况下，宽度和高度字段被链接为接受相同的值。切换<img src="https://helpx.adobe.com/content/dam/help/en/robohelp/using/format-content/jcr_content/main-pars/procedure_1276712156/proc_par/step_1306647738/step_par/image_1010861831/click_to_link_button.png" style="width: 100%; max-width: 16px;"/>以设置不同的宽度和高度值</p>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <p>Maximum Dimensions<br/>
+        由于“首选尺寸”可以通过 Scale 和 Maintain Aspect Ratio设置覆盖，因此请使用此部分设置导入文档中图像尺寸的最大限制</p>
+    </li>
+    <li>
+      <p>Borders 控制使用此部分应用于导入图像的标准 HTML 边框的属性</p>
+      <ul>
+        <li>
+          <p>Border Style 从下拉列表中选择边框样式。 默认为无</p>
+        </li>
+        <li>
+          <p>Color 单击 <img src="https://helpx.adobe.com/content/dam/help/en/robohelp/using/import-link-framemaker/jcr_content/main-pars/image/border_color_icon.png" style="width: 100%; max-width: 15px;"/>以选择边框颜色。 默认为黑色。 或单击<img src="https://helpx.adobe.com/content/dam/help/en/robohelp/using/import-link-framemaker/jcr_content/main-pars/image/color_picker_icon.png" style="max-width: 100%;"/> 以从屏幕上选择一种颜色</p>
+        </li>
+        <li>
+          <p>Width 指定边框宽度</p>
+        </li>
+        <li>
+          <p>从以下选项中选择要应用的边框：</p>
+          <ul>
+            <li>
+              <p><img src="https://helpx.adobe.com/content/dam/help/en/robohelp/using/import-link-framemaker/jcr_content/main-pars/image/all_borders_icon.png" style="max-width: 100%;"/>全部（默认）</p>
+            </li>
+            <li>
+              <p><img src="https://helpx.adobe.com/content/dam/help/en/robohelp/using/import-link-framemaker/jcr_content/main-pars/image/top_border_icon.png" style="max-width: 100%;"/> 右边</p>
+            </li>
+            <li>
+              <p><img src="https://helpx.adobe.com/content/dam/help/en/robohelp/using/import-link-framemaker/jcr_content/main-pars/image/right_border_icon.png" style="max-width: 100%;"/> 底边</p>
+            </li>
+            <li>
+              <p><img src="https://helpx.adobe.com/content/dam/help/en/robohelp/using/import-link-framemaker/jcr_content/main-pars/image/left_border_icon.png" style="max-width: 100%;"/> 左边</p>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <p>高级设置</p>
+      <ul>
+        <li>
+          <p>Default Format 选择要将所有导入的图像转换为的默认图像格式</p>
+        </li>
+        <li>
+          <p>Color Bit Depth 根据选择的默认图像格式更改。 您可以从受支持的选项中选择深度</p>
+        </li>
+        <li>
+          <p>JPG Quality 指定一个值以设置所有导入的 JPG 图像的质量。 此字段根据大小和质量控制 JPG 压缩，例如，默认值100表示最佳质量和最小压缩率</p>
+        </li>
+        <li>
+          <p>Grayscale 将所有导入的图像转换为灰度</p>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <h4>Advanced</h4>
+  <p>选择 Advanced 选项卡为导入的内容指定高级设置。在此选项卡中，可以查看以下列：</p>
+  <ul>
+    <li>
+      <p>Context sensitive help marker 如果要从 FrameMaker 文档中导入上下文相关帮助标记，请选择此字段并指定要导入的上下文相关帮助制作者的类型</p>
+    </li>
+    <li>
+      <p>Split into topics using marker 如果要基于 FrameMaker 文档中的特定标记类型创建主题，请选择此字段并指定标记类型</p>
+    </li>
+    <li>
+      <p>Keep all topics in one folder  如果要导入 FrameMaker book ，可选择此字段以将 book 中所有主题保留在同一文件夹中</p>
+    </li>
+    <li>
+      <p>Add all topics to Table of Contents 中选择此字段可将从选定 FrameMaker 文档创建的所有主题添加到正在创建的目录文件中</p>
+    </li>
+    <li>
+      <p>Cleanup inline HTML styles 如果导入的 FrameMaker 文档具有内联样式，请选择此字段以放弃此类样式</p>
+    </li>
+    <li>
+      <p>Import Glossary files 将所选 FrameMaker 文档中的所有词汇表信息导入到新的词汇表文件中。默认情况下选中此选项</p>
+    </li>
+    <li>
+      <p>Import TOC files 导入从 FrameMaker 书中引用的所有目录文件，这些文件正被导入到新的目录文件中。默认情况下选中此选项</p>
+    </li>
+  </ul>
+  <h2>发布到 Robohelp Server</h2>
+  <h3>什么是 Robohelp Server</h3>
+  <p>Adobe RoboHelp Server 10 是基于服务器的帮助解决方案，可为你的帮助和知识库提供实时的用户反馈。 在 RoboHelp 中输出项目，然后将其发布到 RoboHelp Server。 RoboHelp Server 收集并记录有关用户在搜索内容时提出的问题以及用户浏览 topics 方式的数据。 结果以易于查看的图形格式显示，以便快速解释。</p>
+  <h3>如何发布到 Robohelp Server</h3>
+  <p>要发布到 RoboHelp Server，首先要设置发布的配置文件，提供有关 RoboHelp Server 实例的信息。 RoboHelp 支持响应式 HTML5 输出类型，你可以编辑 HTML5 输出预设，选择要使用的配置文件， 然后将内容发布到RoboHelp Server。</p>
+  <h3>配置 RoboHelp Server 发布</h3>
+  <ol>
+    <li>
+      <p>目录面板中选择 Edit &gt; Publish Profiles</p>
+    </li>
+    <li>
+      <p>点击<img src="https://helpx.adobe.com/content/dam/help/en/robohelp/using/robohelp-server/jcr_content/main-pars/procedure/proc_par/step_1/step_par/image/create_icon.png" style="max-width: 100%;"/>创建新的配置文件</p>
+    </li>
+    <li>
+      <p>在服务器类型字段中，选择服务器的类型为 RoboHelp Server。其默认值为 SharePoint Online。</p>
+    </li>
+    <li>
+      <p>对于 RoboHelp Server 服务器类型，请执行以下操作：</p>
+      <ul>
+        <li>
+          <p>Name 显示默认配置文件名称。如果需要，请修改名称</p>
+        </li>
+        <li>
+          <p>Address 指定要将项目发布到的 Robohelp 服务器的地址<br/>
+            地址格式： http：// &lt;服务器名称&gt;：&lt;端口号&gt; / &lt;上下文名称&gt; /服务器</p>
+          <ul>
+            <li>
+              <p>server-name 设置 RoboHelp Server 的计算机的主机名或 IP 地址。如果它在同一台计算机上，则可以将本地主机指定为服务器名称</p>
+            </li>
+            <li>
+              <p>port-number（可选） 运行 RoboHelp Server 的端口。默认值为8080，如果你将默认端口用于HTTP或HTTPS协议，则无需提供端口号</p>
+            </li>
+            <li>
+              <p>context-name 要发布去的环境。默认值为robohelp</p>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p>User ID 和 Password 验证身份</p>
+        </li>
+        <li>
+          <p>Areas 在服务器上选择要发布内容的区域。要刷新区域，请单击 <img src="https://helpx.adobe.com/content/dam/help/en/robohelp/using/robohelp-server/jcr_content/main-pars/procedure/proc_par/step/step_par/image/refresh_icon.png" style="max-width: 100%;"/></p>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <p>点击 save 保存配置文件</p>
+    </li>
+  </ol>
+  <h3>发布到 Robohelp Server</h3>
+  <ol>
+    <li>
+      <p>点击标准工具栏中的 Output 选项卡。 Output Presets 是 Output 工具栏中的默认选择</p>
+    </li>
+    <li>
+      <p>在 Output Presets 面板中，双击一个 output preset 以对其进行编辑</p>
+    </li>
+    <li>
+      <p>在 output preset 编辑器中，选择 Publish 选项卡以查看跨项目创建的服务器</p>
+    </li>
+    <li>
+      <p>选择要向其发布内容的配置文件（服务器）</p>
+    </li>
+    <li>
+      <p>选择 Republish ALL 以重新发布整个内容。如果未选择此字段，则 RoboHelp 仅发布自上次发布以来的更新内容，而不发布整个内容</p>
+    </li>
+    <li>
+      <p>要发布到选定的配置文件（服务器），单击output preset ，然后在标准工具栏中单击 <img src="https://helpx.adobe.com/content/dam/help/en/robohelp/using/robohelp-server/jcr_content/main-pars/procedure_1457664588/proc_par/step_2082899373/step_par/image/publish_icon.png" style="max-width: 100%;"/> </p>
+    </li>
+    <li>
+      <p>要查看已发布的内容，在已发布配置文件的结果列中单击 <img src="https://helpx.adobe.com/content/dam/help/en/robohelp/using/robohelp-server/jcr_content/main-pars/image/view_icon.png" style="max-width: 100%;"/></p>
+    </li>
+  </ol>
+  <h2>发布到 FTP、SFTP 或 File System 服务器</h2>
+  <h3>如何发布到 FTP、SFTP 或 File System 服务器</h3>
+  <p>你可以在 RoboHelp 中生成项目的输出，然后使用文件传输协议（FTP），安全文件传输协议（SFTP）或文件系统将输出发布到外部服务器。为此，首先设置发布配置文件，以提供有关 FTP，SFTP 或文件系统实例的信息。编辑输出预设，选择要使用的发布配置文件，然后发布内容。</p>
+  <h3>配置 FTP、SFTP 或 File System 服务器发布</h3>
+  <ol>
+    <li>
+      <p>目录面板中选择 Edit &gt; Publish Profiles</p>
+    </li>
+    <li>
+      <p>点击<img src="https://helpx.adobe.com/content/dam/help/en/robohelp/using/robohelp-server/jcr_content/main-pars/procedure/proc_par/step_1/step_par/image/create_icon.png" style="max-width: 100%;"/>创建新的配置文件</p>
+    </li>
+    <li>
+      <p>在服务器类型字段中，选择服务器的类型为 FTP、SFTP、或 File System。其默认值为 SharePoint Online。</p>
+    </li>
+    <li>
+      <p>如果需要，在 Name 字段中，修改默认配置文件名称</p>
+    </li>
+    <li>
+      <p>对于 FTP 服务器类型，请执行以下操作：</p>
+      <ul>
+        <li>
+          <p>Address 指定服务器的域名或其IP地址</p>
+        </li>
+        <li>
+          <p>Anonymous User 选择此字段以匿名用户身份发布内容。匿名用户不需要登录凭据。如果你不想以匿名用户身份发布，请在 UserID 和 Password 字段中输入登录凭据</p>
+        </li>
+        <li>
+          <p>Server Directory 在服务器上指定要将内容发布到的路径。例如，为根文件夹指定/，为文件夹和子文件夹指定/ folder1 / folder2。如果指定的子文件夹不存在，则RoboHelp会创建它并在新的子文件夹中复制文件</p>
+        </li>
+        <li>
+          <p>Port 指定端口。默认值为21</p>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <p>对于SFTP服务器类型，请执行以下操作：</p>
+      <ul>
+        <li>
+          <p>Address 指定服务器的域名或其IP地址</p>
+        </li>
+        <li>
+          <p>User ID 和 Password SFTP服务器仅支持用户名和密码登录。输入你的登录凭据</p>
+        </li>
+        <li>
+          <p>Server Directory 在服务器上指定要将内容发布到的路径。例如，为根文件夹指定/，为文件夹和子文件夹指定/ folder1 / folder2。如果指定的子文件夹不存在，则RoboHelp会创建它并在新的子文件夹中复制文件</p>
+        </li>
+        <li>
+          <p>Port 指定端口。默认值为22</p>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <p>对于 File System 服务器类型，在 Destination Path 字段中，指定要将内容发布到的网络路径。仅支持绝对路径。 RoboHelp会在你提供的路径上复制文件，而无需为输出创建任何子文件夹</p>
+    </li>
+    <li>
+      <p>点击 Save 保存配置</p>
+    </li>
+  </ol>
+  <h3>发布到 FTP、SFTP 或 File System 服务器</h3>
+  <ol>
+    <li>
+      <p>点击标准工具栏中的 Output 选项卡。 Output Presets 是 Output 工具栏中的默认选择</p>
+    </li>
+    <li>
+      <p>在 Output Presets 面板中，双击一个 output preset 以对其进行编辑</p>
+    </li>
+    <li>
+      <p>在 output preset 编辑器中，选择 Publish 选项卡以查看跨项目创建的服务器</p>
+    </li>
+    <li>
+      <p>选择要向其发布内容的配置文件（服务器）</p>
+    </li>
+    <li>
+      <p>选择 Republish ALL 以重新发布整个内容。如果未选择此字段，则 RoboHelp 仅发布自上次发布以来的更新内容，而不发布整个内容</p>
+    </li>
+    <li>
+      <p>要发布到选定的配置文件（服务器），单击output preset ，然后在标准工具栏中单击 <img src="https://helpx.adobe.com/content/dam/help/en/robohelp/using/robohelp-server/jcr_content/main-pars/procedure_1457664588/proc_par/step_2082899373/step_par/image/publish_icon.png" style="max-width: 100%;"/> </p>
+    </li>
+    <li>
+      <p>要查看已发布的内容，在已发布配置文件的结果列中单击 <img src="https://helpx.adobe.com/content/dam/help/en/robohelp/using/robohelp-server/jcr_content/main-pars/image/view_icon.png" style="max-width: 100%;"/></p>
+    </li>
+  </ol>
+
+</body></html>

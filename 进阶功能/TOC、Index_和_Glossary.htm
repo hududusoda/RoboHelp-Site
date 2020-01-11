@@ -1,0 +1,810 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+  <script type="text/javascript" language="JavaScript">
+    //<![CDATA[
+    function reDo() {
+      if (innerWidth != origWidth || innerHeight != origHeight)
+        location.reload();
+    }
+    if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+      origWidth = innerWidth;
+      origHeight = innerHeight;
+      onresize = reDo;
+    }
+    onerror = null;
+  //]]>
+  </script>
+  <style type="text/css">/*<![CDATA[*/
+
+    < !-- div.WebHelpPopupMenu {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      z-index: 4;
+      visibility: hidden;
+    }
+
+    p.WebHelpNavBar {
+      text-align: right;
+    }
+
+    -->
+  
+/*]]>*/</style>
+
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "..";
+    gCommonRootRelPath = "..";
+    gTopicId = "3.0_3";
+  
+//]]></script>
+
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2019"/>
+  <title>使用 TOC、Index 和 Glossary</title>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta charset="UTF-8"/>
+  <title>使用 TOC、Index 和 Glossary</title>
+  <meta name="generator" content="Adobe RoboHelp 2019"/>
+  <link rel="stylesheet" href="../assets/css/default.css"/>
+  <link rel="stylesheet" href="../assets/css/TOC、Index和Glossary.css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header" onclick="rh._.goToFullLayout()">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="使用 TOC、Index 和 Glossary">
+        <span>使用 TOC、Index 和 Glossary</span>
+      </div>
+      <div class="gotohome" title="按一下此处即可查看此页面的完整内容">
+        <span>按一下此处即可查看此页面的完整内容</span>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+  <h1 class="1">TOCs <span lang="zh-CN">、索引和术语表</span></h1>
+  <p> </p>
+  <p>本章节介绍如何使用 Adobe RoboHelp 的TOCs 、索引和词汇表进阶功能，包括创建和管理 Content、索引、词汇表和浏览序列。</p>
+  <h2 class="2"><span lang="zh-CN">创建和管理 Content </span></h2>
+  <p>Content 提供了项目输出中的图书（文件夹）和页面（topic）的层次结构。 Content 使读者能够查看整个帮助系统及其各个 topic。有了 Content ，最终用户可以快速地选择和查看他们所选择的 topic。</p>
+  <p>一个项目可以有多个 Content ，这取决于想要为读者提供的输出类型。 例如，你可以有一个 Content 来迎合特定的受众（如开发人员），而另一个 Content 则用于不同的受众（如最终用户）。 你可以在 Content 面板中同时维护两个 Content 文件。</p>
+  <h3 class="3"><span lang="zh-CN">创建 Content </span></h3>
+  <ol data-start="1" xmlns="">
+    <li>
+      <p>在 Author 工具栏中，选择 Table of Contents 选项卡</p>
+    </li>
+    <li>
+      <p>单击 <img alt="imagerId467" src="../assets/images/TOC、Index和Glossary_files/image1.jpeg" style="width: 100%; max-width: 12px;"/> 创建 Content </p>
+    </li>
+    <li>
+      <p>在 New Table of Content 对话框的 Name 字段中，设置 Content 文件的名称</p>
+    </li>
+    <li>
+      <p>点击 Done<br/>
+        Content 是在 Table of Contents 选项卡中创建的。一个项目可以有多个 Content 文件，单击 <img alt="图片 1" src="../assets/images/TOC、Index和Glossary_files/image2.png" style="width: 100%; max-width: 16px;"/> 展开一个 Content 文件</p>
+    </li>
+  </ol>
+  <h3 class="3"><span lang="zh-CN">编辑 Content </span></h3>
+  <h4>编辑 Content 文件的两种模式</h4>
+  <ul class="Disc">
+    <li>
+      <p>快速编辑模式：展开 Content 文件后，可以在 Content 面板中以上下文菜单的形式访问快速编辑模式；此模式不启动 Content 编辑器或显示 Content 工具栏</p>
+    </li>
+    <li>
+      <p>综合编辑模式：启动 Content 编辑器，并在标准工具栏的中心显示 Content 工具栏</p>
+    </li>
+  </ul>
+  <h4>在综合编辑模式下编辑 Content 文件</h4>
+  <ol data-start="1" xmlns="">
+    <li>
+      <p>在 Author 工具栏中，选择 Table of Content </p>
+    </li>
+    <li>
+      <p>在 Table of Content 面板中执行下列操作之一，启动 Content 编辑器：</p>
+      <ul class="Disc">
+        <li>
+          <p>双击 Content 文件</p>
+        </li>
+        <li>
+          <p>右键单击 Content 文件，然后单击 Edit</p>
+        </li>
+        <li>
+          <p>单击Content 文件的 <img src="../assets/images/image1.png" style="width: 100%; max-width: 21px;"/>，选择 Options &gt; Edit</p>
+        </li>
+      </ul>
+    </li>
+  </ol>
+  <p>Content 编辑器将作为选项卡打开，标准工具栏的中央显示 Content 工具栏。</p>
+  <h3 class="3"><span lang="zh-CN">自动创建 Content </span></h3>
+  <p>使用自动创建TOC快速创建 Content ，此功能使用项目中文件夹和 topic 的层次结构来创建 Content 文件。</p>
+  <ol>
+    <li>
+      <p>执行下列操作之一：</p>
+      <ul>
+        <li>
+          <p>在 Content 工具栏中，单击 <img alt="imagerId433" src="../assets/images/TOC、Index和Glossary_files/image4.jpeg" style="width: 100%; max-width: 13px;"/></p>
+        </li>
+        <li>
+          <p>在 Content 编辑器中右键单击，然后单击 Auto-create TOC </p>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <p>在 Confirm 对话框中，可以选择以下一项或两项:</p>
+      <ul>
+        <li>
+          <p>在创建新 Content之前删除当前 Content 在自动创建之前删除现有 Content （如果有的话）</p>
+        </li>
+        <li>
+          <p>为书签创建TOC页面，如果 topic 包括书签，选择此字段为每个书签创建一个附加页面</p>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <p>单击 OK </p>
+    </li>
+  </ol>
+  <p class="Emphasis2">注意:如果 Content 已存在，而没有选择 Confirm 对话框中的任何选项，则新 Content 将追加到现有 Content 的末尾</p>
+  <h3 class="3"><span lang="zh-CN">插入 Topic</span></h3>
+  <p>通过从 Content 面板拖动 topic 并将其放入 Content 中，即可快速在TOC中插入 topic。</p>
+  <p>或者，请按照以下步骤操作：</p>
+  <ol>
+    <li>
+      <p>执行下列操作之一：</p>
+      <ul>
+        <li>
+          <p> Content 工具栏中，单击<img alt="imagerId434" src="../assets/images/TOC、Index和Glossary_files/image5.jpeg" style="width: 100%; max-width: 14px;"/></p>
+        </li>
+        <li>
+          <p>右键单击 Content 编辑器，然后选择 New &gt; Page</p>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <p>在 Insert Page 对话框中，执行以下操作:</p>
+      <ul>
+        <li>
+          <p>Project Files 从项目中插入 topic</p>
+        </li>
+        <li>
+          <p>Title 修改 Content 中 topic 的显示标题，而不更改实际 topic 标题</p>
+        </li>
+        <li>
+          <p>Search 搜索 topic ，可以使用 Recently Used 面板或 Content 面板来选择 topic </p>
+        </li>
+        <li>
+          <p>单击 Insert</p>
+        </li>
+      </ul>
+    </li>
+  </ol>
+  <h3 class="3"><span lang="zh-CN">插入文件夹</span></h3>
+  <p>通过从 Content面板拖动文件夹并将其放入 Content 中，即可快速在TOC中插入文件夹。 RoboHelp 保留 Content 面板中文件夹的原始层次结构。</p>
+  <p>或者，执行以下步骤：</p>
+  <ol>
+    <li>
+      <p>执行下列操作之一：</p>
+      <ul>
+        <li>
+          <p>在 Content 工具栏中，单击 <img alt="imagerId439" src="../assets/images/TOC、Index和Glossary_files/image6.jpeg" style="width: 100%; max-width: 14px;"/></p>
+        </li>
+        <li>
+          <p>在 Content 编辑器中右键单击并选择 New &gt; Book </p>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <p>在 Insert Book 对话框中，执行以下操作:</p>
+      <ul>
+        <li>
+          <p>Project Files 从项目中插入文件夹</p>
+        </li>
+        <li>
+          <p>Title 修改 Content 中文件夹的显示标题，而不更改实际文件夹标题</p>
+        </li>
+        <li>
+          <p>Search 搜索文件夹，可以使用 Report 面板或 Content 面板来选择文件夹</p>
+        </li>
+        <li>
+          <p>单击 Insert</p>
+        </li>
+      </ul>
+    </li>
+  </ol>
+  <h3 class="3"><span lang="zh-CN">插入 Content 占位符</span></h3>
+  <p>RoboHelp可以实现协作创作，多个作者可以在各自的书籍上工作。 使用 Content 占位符，可以从单个图书创建合并输出。为此，可以在当前 Content 中插入 Content 占位符。 RoboHelp在一个占位符中保留了 topic 和文件夹的原始层次结构，该占位符在生成的输出中扩展为一个完整的 Content 。</p>
+  <p>快速插入 Content 占位符，方法是将其从 Content 面板中拖动，然后将其放到当前 Content 中。</p>
+  <p>或者，执行以下步骤：</p>
+  <ol data-start="1" xmlns="">
+    <li>
+      <p>执行下列操作之一：</p>
+      <ul>
+        <li>
+          <p>在 Content 工具栏中，单击<img alt="图片 412" src="../assets/images/TOC、Index和Glossary_files/image7.png" style="width: 100%; max-width: 14px;"/></p>
+        </li>
+        <li>
+          <p>在 Content 编辑器中右键单击并选择 New &gt; TOC Placeholder</p>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <p>在报告插入TOC报告对话框中，从 Content 列表中选择一个 topic，然后单击 Insert<br/>
+        Content 将作为占位符插入，如果在现有 Content 中插入占位符，则会将其插入到当前选定的 topic 之后；如果在插入时选择了文件夹，则占位符将插入所选文件夹中 topic 列表的末尾</p>
+    </li>
+  </ol>
+  <h3 class="3"><span lang="zh-CN">重新排序 Content 中的项目</span></h3>
+  <p>要快速重新排序 Content 文件中的项目（topic、文件夹和 Content 占位符），请执行下列操作之一：</p>
+  <ul>
+    <li>
+      <p>鼠标拖放</p>
+    </li>
+    <li>
+      <p>在 Content 工具栏中或从报告 Content 编辑器报告的 Move context 菜单中单击下列图标：</p>
+      <ul>
+        <li>
+          <p>更改 topic/文件夹的层次结构，将其移动到原始级别以上一个级别</p>
+        </li>
+        <li>
+          <p>更改 topic/文件夹的层次结构，将其移动到原始级别以下一个级别</p>
+        </li>
+        <li>
+          <p>通过将 topic/文件夹移动到上一个 topic /文件夹之上，更改 topic /文件夹的顺序</p>
+        </li>
+        <li>
+          <p>通过将 topic/文件夹移动到下一个 topic /文件夹下面来更改 topic /文件夹的顺序</p>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <h3 class="3"><span lang="zh-CN">删除 Content 中的项目</span></h3>
+  <p>要删除 Content 文件中的项目（ topic ，文件夹或 Content 占位符），请执行下列操作之一：</p>
+  <ul class="Disc">
+    <li>
+      <p>选择该项目，然后键入 Delete </p>
+    </li>
+    <li>
+      <p>右键单击该项目，然后单击 Delete</p>
+    </li>
+    <li>
+      <p>针对该项目，选择 Options &gt; Delete</p>
+    </li>
+  </ul>
+  <h3 class="3"><span lang="zh-CN">使用 Content 属性</span></h3>
+  <p>Content 编辑器在屏幕右侧显示 Properties 面板。 Type 字段显示当前所选项目的类型 book（文件夹）、Page（ topic ）或TOC（ Content 占位符）。对于每个项目，可以设置以下内容:</p>
+  <ul>
+    <li>
+      <p>Title 使用此字段指定文件夹，topic 或 Content 占位符的显示标题，可以与原始标题不同</p>
+    </li>
+  </ul>
+  <p class="Emphasis2">注意:<br/>
+    显示标题仅在 Content 文件中可见。 题目原标题不变。如果不指定显示标题， Content 文件中的 topic 标题将与原始 topic 标题同步。</p>
+  <ul>
+    <li>
+      <p>Source 显示所选 topic 文件的URL及其原始标题（如果修改，则不显示标题），单击选择 Topic，然后单击 Report 更新报告，可以将所选 topic 替换为与项目不同的 topic</p>
+    </li>
+  </ul>
+  <p class="Emphasis2">注意:<br/>
+    如果链接的 topic 不存在，RoboHelp会在TOC中针对 topic 显示一个红色的x标记。</p>
+  <ul>
+    <li>
+      <p>Hide in output 从输出的 Content 中隐藏 topic</p>
+    </li>
+  </ul>
+  <p class="Emphasis2">注意:<br/>
+    如果你想要发布补充文件，例如，PDF和DOC，但不想在输出中的 Content 中显示，则此功能很有用。为此，将补充文件添加到TOC中，并针对每个文件，选择 Hide in Output。</p>
+  <ul>
+    <li>
+      <p>Apply Tags 单击此处可将条件标记应用到 Content 文件，在 Apply Condition Tags 对话框中，选择要应用的条件标记，选定的标记显示在对话框的右侧</p>
+    </li>
+  </ul>
+  <h3 class="3"><span lang="zh-CN">在输出中使用所需的 Content </span></h3>
+  <p>要在输出中使用 Content ，请执行以下操作：</p>
+  <ol data-start="1" xmlns="">
+    <li>
+      <p>单击标准报告工具栏左侧的 Output 选项卡</p>
+    </li>
+    <li>
+      <p>在输出报告工具栏中，单击 Output Presets</p>
+    </li>
+    <li>
+      <p>在 Output Presets 面板中，从给定选项中选择所需的输出预置，可以从响应HTML5，移动应用程序，WebHelp，电子书等中选择输出预设</p>
+    </li>
+    <li>
+      <p>选择 Content 选项卡</p>
+    </li>
+    <li>
+      <p>Content 字段显示项目中创建的所有 Content 文件，在下拉列表中选择所需的 Content 文件，将所选 Content 包含在最终输出的文档中</p>
+    </li>
+  </ol>
+  <h3 class="3"><span lang="zh-CN">重命名 Content </span></h3>
+  <ol data-start="1" xmlns="">
+    <li>
+      <p>在打开的项目中，在 Author 工具栏中选择 Table of Content </p>
+    </li>
+    <li>
+      <p>在 Table of Content 面板中，右键单击重命名的 topic，选择 Options &gt; rename</p>
+    </li>
+    <li>
+      <p>在 Rename Table of Content 对话框中，修改当前名称</p>
+    </li>
+    <li>
+      <p>单击 <strong>Done </strong></p>
+    </li>
+  </ol>
+  <h3 class="3"><span lang="zh-CN">删除 Content </span></h3>
+  <ol>
+    <li>
+      <p>在打开的项目中，在 Author 工具栏中选择 Table of Content </p>
+    </li>
+    <li>
+      <p>在 Table of Content 面板中，右键单击要删除的 Content，选择 Options &gt; delete</p>
+    </li>
+    <li>
+      <p>在 Confirm 对话框中，单击 Yes，报告确认删除</p>
+    </li>
+  </ol>
+  <h2 class="2"><span lang="zh-CN">创建和管理索引</span></h2>
+  <h3 class="3"><span lang="zh-CN">什么是索引（index）</span></h3>
+  <p>索引是项目中使用的按字母顺序排序的关键字列表。关键字可以包含多个级别的子关键字，可以将关键字和子关键字与包含它们的 topic 相关联，并向其中添加交叉引用其他关键字；还可以在添加关键字或子关键字时使用项目变量。Robohelp 添加 Condition tag 索引关键字以选择要在特定输出中发布的关键字还支持发布关键字，以便最终用户可以使用关键字来搜索和访问输出中的特定 topic 。</p>
+  <h3 class="3"><span lang="zh-CN">添加关键字以创建索引</span></h3>
+  <p>可以通过两种方式添加索引关键字/子关键字</p>
+  <ul class="Disc">
+    <li>
+      <p>topic 属性</p>
+    </li>
+    <li>
+      <p>索引面板</p>
+    </li>
+  </ul>
+  <h4 class="4"><span lang="zh-CN"> topic 属性</span></h4>
+  <ol>
+    <li>
+      <p>在当前 topic 中，单击 properties panel &gt; topic tab &gt; index 的下拉列表，导航到 topic 属性的索引</p>
+    </li>
+    <li>
+      <p>在 Index Keywords 字段中，输入关键字并键入 Enter ；若要设置子关键字，请在关键字之间使用英文冒号“:”；可以在指定关键字和子关键字时使用 variable<br/>
+        新关键字和子关键字放在 Index Keywords 字段的下面；若要删除关键字/子关键字，请单击 <img alt="imagerId450" src="../assets/images/TOC、Index和Glossary_files/image11.jpeg" style="width: 100%; max-width: 14px;"/><br/>
+        新关键字/子关键字按字母顺序显示在 Index 面板中；若要访问 Index 面板，请单击 Author 工具栏中的 Index </p>
+    </li>
+  </ol>
+  <h4 class="4"><span lang="zh-CN">索引面板</span></h4>
+  <ol>
+    <li>
+      <p>在打开的项目中，单击 Author 工具栏中的 Index </p>
+    </li>
+    <li>
+      <p>在报告索引报告面板中，执行下列操作之一：</p>
+      <ul class="Disc">
+        <li>
+          <p>单击面板右上角的 <img alt="imagerId451" src="../assets/images/TOC、Index和Glossary_files/image12.jpeg" style="width: 100%; max-width: 15px;"/></p>
+        </li>
+        <li>
+          <p> 右键单击关键字，选择Options &gt; New keyword</p>
+        </li>
+        <li>
+          <p>Index 面板中将显示一个空字段：</p>
+          <p><img alt="imagerId453" src="../assets/images/TOC、Index和Glossary_files/image14.jpeg" style="width: 100%; max-width: 183px;"/><br/>
+            在空字段中，指定关键字并键入 Enter ；将关键字添加到索引面板中，并按照字母顺序排列</p>
+        </li>
+      </ul>
+    </li>
+  </ol>
+  <p>可以添加多个关键字来创建索引，关键字也可以在 Properties 面板&gt; Topic 选项卡&gt; Index 的下<strong>拉列表</strong>中看到</p>
+  <h3 class="3"><span lang="zh-CN">向关键字添加子关键字</span></h3>
+  <p>要向关键字添加子关键字，请执行以下步骤:</p>
+  <ol data-start="1" xmlns="">
+    <li>
+      <p>在打开的项目中，单击 Author 工具栏中的 Index </p>
+    </li>
+    <li>
+      <p>在Index面板中，右键单击关键字，选择 New Subkeyword </p>
+      <p>关键字下面出现一个空字段：<br/>
+        <img alt="imagerId455" src="../assets/images/TOC、Index和Glossary_files/image15.jpeg" style="width: 100%; max-width: 184px;"/><br/>
+        在空字段中，输入子关键字并键入 Enter ，子关键字将被添加到关键字下面，可以向一个关键字添加多个子关键字</p>
+    </li>
+  </ol>
+  <h3 class="3"><span lang="zh-CN">将关键字和子关键字链接到特定 topic </span></h3>
+  <p>一旦将关键字和子关键字添加到索引中，就可以将它们链接到特定的 topic 。</p>
+  <p>请执行以下步骤：</p>
+  <ol>
+    <li>
+      <p>在打开的项目中，单击 Author 工具栏中的 Index </p>
+    </li>
+    <li>
+      <p>在 Index 面板中，右键单击关键字/子关键字，选择 Add topic </p>
+    </li>
+    <li>
+      <p>在 Add Topic 对话框中，使用 Search 工具栏、Recently Used 面板或者 Content 面板选择项目中的 topic </p>
+    </li>
+    <li>
+      <p>单击 Link 链接报告，topic 被添加到关键字/子关键字下面<br/>
+        <img alt="imagerId457" src="../assets/images/TOC、Index和Glossary_files/image16.jpeg" style="width: 100%; max-width: 224.5px;"/></p>
+    </li>
+  </ol>
+  <h3 class="3"><span lang="zh-CN">将关键字和子关键字链接到其他关键字</span></h3>
+  <p>一旦将关键字和子关键字添加到索引中，就可以将它们链接到索引中的其他关键字。 为此，请执行以下步骤：</p>
+  <ol data-start="1" xmlns="">
+    <li>
+      <p>在打开的项目中，单击 Author 工具栏中的 Index </p>
+    </li>
+    <li>
+      <p>在 Index 面板中，右键单击关键字/子关键字，选择 Add Cross Reference</p>
+    </li>
+    <li>
+      <p>在 Insert Cross Reference 对话框中，可以键入前几个字母来筛选关键字、按向上和向下箭头键在关键字列表中定位、 按 Enter 键插入关键字</p>
+    </li>
+  </ol>
+  <h3 class="3"><span lang="zh-CN">将 <strong>Condition Tag</strong> 应用于关键字或子关键字</span></h3>
+  <p>可以在所有输出中使用单个索引文件，并对特定关键字/子关键字应用条件标记，以发布特定输出中的那些。</p>
+  <p>可以将多个条件标记应用于索引中的关键字和子关键字。</p>
+  <p>请执行以下步骤:</p>
+  <ol data-start="1" xmlns="">
+    <li>
+      <p>在打开的项目中，单击 Author 工具栏中的 Index </p>
+    </li>
+    <li>
+      <p>在Index面板中，右键单击关键字/子关键字，选择 Apply Condition Tags </p>
+    </li>
+    <li>
+      <p>在 Apply Condition Tag 对话框中，单击左面板中的 Condition Tags</p>
+      <p>该标记将显示在右面板中，若要删除，单击即可</p>
+    </li>
+    <li>
+      <p>单击 Apply </p>
+    </li>
+  </ol>
+  <p>在 Index 面板中，关键字/子关键字上显示彩色圆圈，表示应用了条件标记。</p>
+  <h3 class="3"><span lang="zh-CN">重命名关键字或子关键字</span></h3>
+  <p>要重命名报告索引报告面板中的关键字/子关键字，请执行以下步骤：</p>
+  <ol data-start="1" xmlns="">
+    <li>
+      <p>在打开的项目中，单击 Author 工具栏中的 Index </p>
+    </li>
+    <li>
+      <p>在Index面板中，右键单击关键字/子关键字，选择 Rename</p>
+    </li>
+    <li>
+      <p>编辑文本框的关键字/子关键字，然后按 Enter 键确认输入</p>
+    </li>
+  </ol>
+  <p>编辑的关键字/子关键字反映在 topic 属性的索引面板和索引下拉部分中；使用此关键字/子关键字的所有 topic 也将同步更新。</p>
+  <h3 class="3"><span lang="zh-CN">删除关键字或子关键字</span></h3>
+  <p>要删除报告索引报告面板中的关键字/子关键字，请执行以下步骤：</p>
+  <ol data-start="1" xmlns="">
+    <li>
+      <p>在打开的项目中，单击 Author 工具栏中的 Index</p>
+    </li>
+    <li>
+      <p>在Index面板中，右键单击关键字/子关键字，选择 Delete </p>
+    </li>
+    <li>
+      <p>在 Confirm 对话框内，单击 Yes，确认删除</p>
+    </li>
+  </ol>
+  <p>删除的关键字/子关键字将从索引面板和 topic 属性中的索引下拉列表中删除，topic 中的相应内容也会随之删除。</p>
+  <h3 class="3"><span lang="zh-CN">发布索引</span></h3>
+  <p>默认情况下，在输出中发布索引。 可以在 RoboHelp 中更改此设置，同时配置要用于生成输出的输出预设。 为此，请执行以下步骤:</p>
+  <ol data-start="1" xmlns="">
+    <li>
+      <p>单击 Output 工具栏左侧的 Report 选项卡</p>
+    </li>
+    <li>
+      <p>在 Output 工具栏中，单击 Output Presets </p>
+    </li>
+    <li>
+      <p>在 Output Presets 面板中，双击要编辑的输出预设</p>
+    </li>
+    <li>
+      <p>单击 Content 选项卡，默认情况下选择了 Include Index 字段，因此默认情况下将发布 Index；根据是否要发布索引，可以选择或取消选择此字段</p>
+    </li>
+    <li>
+      <p>输出索引</p>
+    </li>
+  </ol>
+  <h3 class="3"><span lang="zh-CN">在输出文档中使用索引</span></h3>
+  <p>输出中的 index 面板显示所有关键字，作为最终用户的导航。 在索引面板中，可以对关键字进行筛选，然后单击关键字以快速跳转到关联的 topic 。 最终用户可以使用索引关键字快速搜索和访问他们选择的 topic 。 索引关键字的排名与搜索关键字相同。</p>
+  <h2 class="2"><span lang="zh-CN">创建和管理词汇表</span></h2>
+  <p>可以指定项目中你认为读者难以理解的术语、词汇表达的定义。 单个术语表文件可以包含多个术语，并且在一个项目中可以有多个这样的术语表文件。 你可以根据你的受众来决定哪个词汇表文件进入你的输出。</p>
+  <p>你可以从术语表面板访问，添加，删除和编辑术语表。</p>
+  <h3 class="3"><span lang="zh-CN">创建词汇表</span></h3>
+  <p>要在RoboHelp中为你的项目创建术语表文件，请执行以下操作:</p>
+  <ol data-start="1" xmlns="">
+    <li>
+      <p>在 Author 工具栏中，选择 Glossary ，可以查看术语表面板</p>
+    </li>
+    <li>
+      <p>在术语表面板中，单击图标</p>
+    </li>
+    <li>
+      <p>在 Add Glossary 对话框中，在 name 字段中指定 Glossary文件的名称，然后单击 Done</p>
+    </li>
+  </ol>
+  <p>现在可以在 glossary 面板中将创建的术语表文件作为可扩展列表查看。 你可以在一个项目中创建多个术语表文件。 但是，你一次只能通过单击一个术语表文件展开该文件</p>
+  <h3 class="3"><span lang="zh-CN">向词汇表中添加术语</span></h3>
+  <p>要向术语表文件添加定义术语，请执行以下步骤:</p>
+  <ol data-start="1" xmlns="">
+    <li>
+      <p>在 Author 工具栏中，选择Glossary， 将打开报告词汇表报告面板</p>
+    </li>
+    <li>
+      <p>在 Glossary 面板中，单击 <img alt="图片 1293850581" src="../assets/images/TOC、Index和Glossary_files/image18.png" style="width: 100%; max-width: 16px;"/> 以展开要在其中添加术语的术语表文件</p>
+    </li>
+    <li>
+      <p>在展开的术语表文件中，单击 <img alt="图片 1293850582" src="../assets/images/TOC、Index和Glossary_files/image19.png" style="width: 100%; max-width: 16px;"/> 图标以添加新术语</p>
+    </li>
+    <li>
+      <p>在 Define Glossary Term 对话框中，分别在 Term 和 Definiton 中指定术语及其定义</p>
+    </li>
+    <li>
+      <p>单击单击 Done </p>
+    </li>
+  </ol>
+  <h3 class="3"><span lang="zh-CN">在 topic 中添加词汇表术语的定义</span></h3>
+  <p>你可以很容易地在所需 topic 的内容中添加词汇表术语及其定义。 然后，该术语将在 topic 中突出显示为超链接。 当你生成输出时，你的读者可以单击术语来查看其指定的定义，该定义显示为展开文本。 要在 topic 中添加词汇表术语定义，请执行以下步骤:</p>
+  <ol data-start="1" xmlns="">
+    <li>
+      <p>在 Author 工具栏中，选择 Content 并打开你想要的 topic </p>
+    </li>
+    <li>
+      <p>在 Author 工具栏中，单击Glossary。 Glossary面板打开，其中包含所有词汇表文件</p>
+    </li>
+    <li>
+      <p>单击 <img alt="图片 1293850584" src="../assets/images/TOC、Index和Glossary_files/image20.png" style="width: 100%; max-width: 8px;"/> 以展开要从中添加术语定义的词汇表文件</p>
+    </li>
+    <li>
+      <p>将词汇表术语拖放到打开 topic 中的适当位置</p>
+    </li>
+  </ol>
+  <h3 class="3"><span lang="zh-CN">编辑术语表术语</span></h3>
+  <p>你可以在词汇表文件中更改或编辑术语的定义。 要执行此操作:</p>
+  <ol data-start="1" xmlns="">
+    <li>
+      <p>在 Author 工具栏中，选择 Glossary，将打开报告词汇表报告面板</p>
+    </li>
+    <li>
+      <p>在 Glossary 面板中，单击 <img alt="图片 1293850585" src="../assets/images/TOC、Index和Glossary_files/image21.png" style="width: 100%; max-width: 8px;"/> 以展开一个术语表文件，并将鼠标悬停在要编辑的术语定义上</p>
+    </li>
+    <li>
+      <p>点击 <img alt="图片 1293850586" src="../assets/images/TOC、Index和Glossary_files/image22.png" style="width: 100%; max-width: 13px;"/> </p>
+    </li>
+    <li>
+      <p>在 Edit Glossary Term 对话框中，你可以同时编辑术语和定义</p>
+    </li>
+    <li>
+      <p>单击 Done 完成报告</p>
+    </li>
+  </ol>
+  <h3 class="3"><span lang="zh-CN">在输出中添加所需的词汇表文件</span></h3>
+  <p>要指定输出中包含哪个术语表，请执行以下步骤:</p>
+  <ol data-start="1" xmlns="">
+    <li>
+      <p>单击 Output 选项卡，此时将打开输出视图。</p>
+    </li>
+    <li>
+      <p>在 Output 工具栏中，单击 Output Presets 输出预置报告。</p>
+    </li>
+    <li>
+      <p>在 Output Presets 面板中，从给定选项中选择所需的输出预置。 你可以选择输出预设选项，如响应HTML5，移动应用程序，网络帮助，电子书，以及更多。</p>
+    </li>
+    <li>
+      <p>选择 Content 选项卡。</p>
+    </li>
+    <li>
+      <p>在 Glossary 字段中，从下拉列表中选择所需的 Glossary文件。</p>
+    </li>
+  </ol>
+  <h3 class="3"><span lang="zh-CN">删除词汇表术语</span></h3>
+  <p>要从术语表文件中删除术语表术语，请执行以下步骤:</p>
+  <ol data-start="1" xmlns="">
+    <li>
+      <p>在 Author 工具栏中，选择 Glossary，将打开报告词汇表报告面板</p>
+    </li>
+    <li>
+      <p>在报告术语表报告面板中，单击 &gt; 以展开一个术语表文件，并将鼠标悬停在要删除的术语定义上</p>
+    </li>
+    <li>
+      <p>点击 <img alt="图片 1293850587" src="../assets/images/TOC、Index和Glossary_files/image23.png" style="width: 100%; max-width: 14px;"/> </p>
+    </li>
+    <li>
+      <p>在 Confim 对话框中，单击 Yes 报告</p>
+    </li>
+  </ol>
+  <p>术语表术语将从术语表文件中删除</p>
+  <h3 class="3"><span lang="zh-CN">重命名词汇表</span></h3>
+  <p>你可以在 RoboHelp 的 glossary 面板中重命名一个术语表文件。 要执行此操作:</p>
+  <ol data-start="1" xmlns="">
+    <li>
+      <p>在 Author 工具栏中，选择 Glossary。 将打开报告词汇表报告面板</p>
+    </li>
+    <li>
+      <p>在 Glossary 面板中，针对要重命名的术语表，选择 Options &gt; rename</p>
+    </li>
+    <li>
+      <p>在 Rename Glossary 对话框中，指定新名称，然后单击单击 Done 完成报告</p>
+    </li>
+  </ol>
+  <h3 class="3"><span lang="zh-CN">删除词汇表</span></h3>
+  <p>你可以从 RoboHelp 中的 glossary 面板中删除一个词汇表文件。 要执行此操作:</p>
+  <ol data-start="1" xmlns="">
+    <li>
+      <p>在 Author 工具栏中，选择 Glossary。 将打开报告词汇表报告面板</p>
+    </li>
+    <li>
+      <p>在 Glossary 面板中，针对要删除的 Glossary 文件，选择 Options &gt; delete</p>
+    </li>
+    <li>
+      <p>在 Confirm 对话框中，单击 Yes 确认删除</p>
+    </li>
+  </ol>
+  <h2 class="2"><span lang="zh-CN">创建和管理浏览序列</span></h2>
+  <h3 class="3"><span lang="zh-CN">什么是浏览序列（Browse Sequence）</span></h3>
+  <p>浏览序列是一个线性 topic 列表，它可以帮助你的用户在逻辑上轻松地浏览输出中的一系列 topic 。 使用浏览序列为你的用户提供导航到上一个或下一个相关 topic 的路径。</p>
+  <p>使用浏览序列时，请记住以下几点:</p>
+  <ul class="Disc">
+    <li>
+      <p>不能在浏览序列中包含来自其他项目的 topic </p>
+    </li>
+    <li>
+      <p>你可以在多个浏览序列中包含单个 topic </p>
+    </li>
+  </ul>
+  <h3 class="3"><span lang="zh-CN">添加浏览序列</span></h3>
+  <ol data-start="1" xmlns="">
+    <li>
+      <p>单击 Author 选项卡，将打开作者视图</p>
+    </li>
+    <li>
+      <p>在 Author 工具栏中，单击 Browse Sequence 。 此时将打开 Browse Sequence 面板</p>
+    </li>
+    <li>
+      <p>单击面板的右上角。 此时将打开 New Browse Sequence 对话框</p>
+    </li>
+    <li>
+      <p>在 New Browse Sequence 对话框中，指定浏览序列的名称，然后单击 Create </p>
+      <p>新的浏览序列被添加到 Browse Sequence 面板中，并按字母顺序放置</p>
+    </li>
+    <li>
+      <p>单击 Save All </p>
+    </li>
+  </ol>
+  <h3 class="3"><span lang="zh-CN">编辑浏览序列</span></h3>
+  <p>你可以很容易地自定义一个浏览序列以适应你的要求。 编辑浏览序列:</p>
+  <ol data-start="1" xmlns="">
+    <li>
+      <p>单击 Author 选项卡，此时将打开作者视图</p>
+    </li>
+    <li>
+      <p>在 Author 工具栏中，单击 Browse Sequence 。此时将打开 Browse Sequence 面板</p>
+    </li>
+    <li>
+      <p>在 Browse Sequence 面板中，针对你要自定义的浏览序列，选择Options &gt; Edit。 浏览序列编辑器将打开。使用拖放将 topic 或TOC添加到浏览序列编辑器</p>
+    </li>
+    <li>
+      <p>从 Content 面板添加 topic :</p>
+      <ul class="Disc">
+        <li>
+          <p>在 Author 工具栏中，单击 Content </p>
+        </li>
+        <li>
+          <p>从 Content 面板中，拖动一个 topic 并将其放到浏览序列编辑器中。 若要从文件夹中添加一组 topic ，请拖放该文件夹。 文件夹内的所有 topic ，包括子文件夹，都以线性列表的形式插入</p>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <p>从TOC添加 topic :</p>
+      <ul class="Disc">
+        <li>
+          <p> 在 Author 工具栏中，单击 Content </p>
+        </li>
+        <li>
+          <p>从 Content 面板中，拖动一个TOC并将其放到浏览序列编辑器中。 TOC中的 topic 以线性列表的形式插入。 你还可以从 Content 面板展开TOC，并拖放单个书籍或页面</p>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <p>在浏览序列编辑器中管理 topic :</p>
+      <ul>
+        <li>
+          <p>若要更改 topic 的顺序，请使用拖放</p>
+        </li>
+        <li>
+          <p>若要删除某个 topic ，请单击 <img alt="图片 1293850588" src="../assets/images/TOC、Index和Glossary_files/image25.png" style="width: 100%; max-width: 16px;"/> 或右键单击该 topic ，然后单击 Delete </p>
+        </li>
+        <li>
+          <p>若要删除浏览序列中的所有 topic ，请右键单击某个 topic ，然后单击报告全部删除报告</p>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <p>单击 Save All 图标 <img alt="图片 1293850589" src="../assets/images/TOC、Index和Glossary_files/image26.png" style="width: 100%; max-width: 16px;"/> </p>
+    </li>
+  </ol>
+  <h3 class="3"><span lang="zh-CN">重命名浏览序列</span></h3>
+  <ol data-start="1" xmlns="">
+    <li>
+      <p>单击 Author 选项卡。此时将打开作者视图</p>
+    </li>
+    <li>
+      <p>在 Author 工具栏中，单击 Browse Sequence 。此时将打开 Browse Sequence 面板</p>
+    </li>
+    <li>
+      <p>在 Browse Sequence 面板中，针对要自定义的浏览序列，选择 Option &gt; Rename</p>
+    </li>
+    <li>
+      <p>在 Rename Browse Sequence对话框中，编辑浏览序列的名称，然后单击单击 Done 完成报告 </p>
+    </li>
+    <li>
+      <p>单击 Save All 图标 <img alt="图片 1293850592" src="../assets/images/TOC、Index和Glossary_files/image28.png" style="width: 100%; max-width: 16px;"/> </p>
+    </li>
+  </ol>
+  <h3 class="3"><span lang="zh-CN">删除浏览序列</span></h3>
+  <ol data-start="1" xmlns="">
+    <li>
+      <p>单击 Author 选项卡</p>
+      <p>此时将打开作者视图</p>
+    </li>
+    <li>
+      <p>在 Author 工具栏中，单击 Browse Sequence 。 此时将打开 Browse Sequence 面板</p>
+    </li>
+    <li>
+      <p>在 Browse Sequence 面板中，针对要删除的浏览序列，选择Options &gt; delete</p>
+    </li>
+    <li>
+      <p>在 Confirm 对话框中，单击 Yes 确认删除</p>
+    </li>
+    <li>
+      <p>单击 Save All 全部保存报告图标</p>
+    </li>
+  </ol>
+  <h3 class="3"><span lang="zh-CN">在输出中包括浏览序列</span></h3>
+  <p>在定义输出预设的同时，你可以选择多个浏览序列。 如果几个浏览序列有一个共同的 topic ，RoboHelp根据其名称的字母顺序给予浏览序列优先权。 因此，公共 topic 之前和之后的 topic 是从具有最高字母顺序的浏览序列名称中挑选出来的。</p>
+  <ul>
+    <li>
+      <p>响应式HTML5，WebHelp和Microsoft HTML帮助输出类型支持浏览序列</p>
+    </li>
+    <li>
+      <p>你可以在响应的HTML5和WebHelp输出预设中包含一个或多个浏览序列</p>
+    </li>
+    <li>
+      <p>MicrosoftHTML帮助输出预设会自动包括项目中可用的所有浏览序列。 因此在输出中，从浏览序列列表中，你可以选择要使用的序列</p>
+    </li>
+  </ul>
+  <p>要在输出中包含浏览序列，请执行以下操作:</p>
+  <ol data-start="1" xmlns="">
+    <li>
+      <p>单击标准报告工具栏左侧的 Output 选项卡</p>
+      <p>此时将打开输出视图。 在 Output 工具栏中， Output Presets 是默认选项</p>
+    </li>
+    <li>
+      <p>在 Output Presets 面板中，双击预置编辑，或者选择 Options &gt; Edit</p>
+    </li>
+    <li>
+      <p>在 Output Presets 的边栏中，单击 Content 选项卡</p>
+    </li>
+    <li>
+      <p>从 Browse Sequence 下拉列表中，选择要添加的浏览序列</p>
+      <p>所选的浏览序列放在 Browse Sequence 下拉列表的下方；若要删除选定的浏览序列，请单击 <img alt="图片 1293850594" src="../assets/images/TOC、Index和Glossary_files/image31.png" style="width: 100%; max-width: 16px;"/> </p>
+    </li>
+    <li>
+      <p>生成浏览序列</p>
+    </li>
+  </ol>
+
+</body></html>

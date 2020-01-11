@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+  <script type="text/javascript" language="JavaScript">
+    //<![CDATA[
+    function reDo() {
+      if (innerWidth != origWidth || innerHeight != origHeight)
+        location.reload();
+    }
+    if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+      origWidth = innerWidth;
+      origHeight = innerHeight;
+      onresize = reDo;
+    }
+    onerror = null;
+  //]]>
+  </script>
+  <style type="text/css">/*<![CDATA[*/
+
+    < !-- div.WebHelpPopupMenu {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      z-index: 4;
+      visibility: hidden;
+    }
+
+    p.WebHelpNavBar {
+      text-align: right;
+    }
+
+    -->
+  
+/*]]>*/</style>
+
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "..";
+    gCommonRootRelPath = "..";
+    gTopicId = "3.0_1";
+  
+//]]></script>
+
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2019"/>
+  <title>项目</title>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta charset="UTF-8"/>
+  <title>项目</title>
+  <meta name="generator" content="Adobe RoboHelp 2019"/>
+  <link rel="stylesheet" href="../assets/css/default.css"/>
+  <link rel="stylesheet" href="../assets/css/项目.css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header" onclick="rh._.goToFullLayout()">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="项目">
+        <span>项目</span>
+      </div>
+      <div class="gotohome" title="按一下此处即可查看此页面的完整内容">
+        <span>按一下此处即可查看此页面的完整内容</span>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+  <h1 class="1"><span lang="zh-CN">项目</span></h1>
+  <p> </p>
+  <p>本章节介绍如何使用 Adobe RoboHelp 的项目进阶功能，包括计划 RoboHelp 项目、使用上下文相关的帮助和生成报告。</p>
+  <h2 class="2"><span lang="zh-CN">计划 </span>RoboHelp <span lang="zh-CN">项目</span></h2>
+  <p>首先最好先花点时间计划项目，而不是直接投入创作。 想想试图要完成的业务目标，以及需要服务的受众。 你用于创建和交付内容的资源也会影响你在计划项目时所做的决策。如果你希望多个作者在一个项目上协作，那计划项目对于确保质量和最大限度地利用资源尤为重要。</p>
+  <h3><a id="_bookmark68"></a>单作者或多作者设置</h3>
+  <p>创作团队的规模是确定要部署的流程和工具的类型的重要考虑因素。 例如，如果多个作者需要协作创建和交付内容，那么集成版本控制系统是一个好主意。 同样，创建和维护词汇表，公共资产以及创作和发布指南有助于确保多作者设置中的内容质量。</p>
+  <h3>多角色设置</h3>
+  <p>如果发布需求大量且多样，则可能需要由不同小组的团队成员来进行创作和输出。 在这种情况下，团队可以使用Robohelp的强大功能和内置功能来实现高效、无摩擦的交付系统。</p>
+  <h3>输出类型和交付</h3>
+  <p>确定你需要的不同输出类型。 考虑以后还需要额外的输出类型吗？ 如果需要，现在可以做什么来使以后添加输出类型变得更容易？ 如果你计划将输出托管在服务器上，你需要与IT管理员一起工作吗？</p>
+  <h3>输出的外观和感觉</h3>
+  <p>为确保内容体验符合目标受众的期望，请花时间可视化输出的外观和输出的感觉。查看RoboHelp附带的皮肤，看看是否需要调整或修改可用的皮肤或者直接创建皮肤。创建一个好的样式表，以便最终用户拥有一个不错的的内容消费体验。</p>
+  <h3>利用外部内容</h3>
+  <p>你可能拥有由 Microsoft Word 中的主题专家编写的常见问题解答、解决方案、案例研究和其他类型的高质量内容。 你可以很容易地在 RoboHelp 中导入此内容。 但是，请确保检查各种 Word 导入设置，并确定导入内容的样式，格式和其他各个方面。 如果你提供的内容有 Adobe Captivate 视频，你可以将它们集成到你的内容中，并为用户提供丰富的，沉浸式的内容体验。</p>
+  <h3>导航设计</h3>
+  <p>在创建大量内容之前，请确保设计最终用户会如何导航输出中的内容。如何组织主题以及每个主题中的内容？要用多少级文件夹？应该使用多少级标题容？</p>
+  <h3>可重用内容</h3>
+  <p>RoboHelp 的一个关键优势是支持实现内容可重用性。 确定需要在整个项目中一致使用的信息类型。 如果它们经常更改或在项目周期后期更改，请使用变量和代码段在一个地方编写和更新它们。</p>
+  <h3>内容格式和样式</h3>
+  <p>计划使用样式对内容的各种元素实施一致且专业的外观。RoboHelp 使可以在项目级别禁止行内格式化。因此，在开始创作之前，请先决定允许还是禁止内联格式。如果要允许内联格式设置，请确保定义和请遵循一些约定，以便使内容一致地格式化。例如，如果希望提到所有 UI 术语内容中的粗体字，请确保在项目的规划阶段定义了该约定，并且在创作时始终遵循它。</p>
+  <h3>专业术语</h3>
+  <p>识别术语并提供清晰的术语描述有助于的最终用户会理解这些概念和说明。而且，术语表可帮助作者建立一致的术语，并提供无缝和真实的用户体验。RoboHelp 在一个项目中创建和维护多个词汇表，还可以为用户拥有多个术语表。</p>
+  <h3>内容管理</h3>
+  <p>利用 RoboHelp 的内置功能为内容定义管理框架。有效地使用各种 RoboHelp 报告来识别不同组件中的错误和不一致之处，并进行全局更新。</p>
+  <h2>使用上下文相关的帮助</h2>
+  <h3>什么是映射文件</h3>
+  <p>Map ID 为每个主题分配一个唯一的 map ID，以便在 CSH 中显示它。 例如，ID_SetupScreen。</p>
+  <p>Map number 与主题关联的数值。 映射号与应用程序一起使用，用于指定用于调用上下文相关帮助的主题。 例如，101。</p>
+  <p>应用程序开发人员是使用 Map number ， Map ID ，还是两者都使用，这取决于他们使用的编程语言。</p>
+  <p>Topic 你可以根据 Map ID 和 Map number 分配或取消分配主题。例如，SetupScreen。</p>
+  <h3>作者和开发人员任务</h3>
+  <p>Map文件由作者和开发人员用于为应用程序构建上下文敏感的帮助。</p>
+  <ul class="Disc">
+    <li>
+      <p>Author 编写的帮助主题描述了如何使用应用程序组件，如窗口，对话框，字段和控件</p>
+    </li>
+    <li>
+      <p>Developer 构建组成应用程序的组件（窗口，对话框，字段，控件）</p>
+    </li>
+  </ul>
+  <p>作者可以生成包含 Map ID 的映射文件并将其提供给开发人员。 或者，作者可以从开发人员那里获得映射文件。</p>
+  <p>要共享映射文件，可以将映射文件导出为 .h 文件，格式如下:</p>
+  <p>#define ID_SetupScreen 101</p>
+  <h3>创建映射文件</h3>
+  <p>步骤:</p>
+  <ol class="Decimal" data-start="1" xmlns="">
+    <li>
+      <p>在 Output 工具栏中，单击 Map Files </p>
+    </li>
+    <li>
+      <p>在 Map Files 面板中，单击右上角，然后单击 New Map File </p>
+    </li>
+    <li>
+      <p>在  New Map File 对话框中，指定映射文件的名称</p>
+      <p class="Emphasis2">注意:创建文件名时，使用下划线而不是空格，并避免使用这些非法字符:\/:*？ &lt;&gt;#报告$&amp;[]</p>
+    </li>
+    <li>
+      <p>单击单击 Done </p>
+    </li>
+  </ol>
+  <p>RoboHelp 将 Map 文件按文件名的字母顺序放在文件面板中，并打开 Map 文件编辑器，编辑文件。</p>
+  <h3>编辑映射文件</h3>
+  <ol class="Decimal" data-start="1" xmlns="">
+    <li>
+      <p>在 Output 工具栏中，单击 Map Files </p>
+    </li>
+    <li>
+      <p>在 Map Files 面板中，双击要编辑的映射文件。 或者选择 Option &gt; Edit </p>
+    </li>
+    <li>
+      <p>要映射主题，可以遵循两种方法：</p>
+    </li>
+  </ol>
+  <ul>
+    <li>
+      <p>方法1:要让 RoboHelp 自动分配 Map ID 和 Map number，请从 Content 面板中拖动一个主题，并将其放在Map 文件编辑器中的字段名称下面<br/>
+        RoboHelp 自动将主题名称映射为映射 ID。 对于第一个主题，默认的映射号是1。 你可以编辑地图 ID 和地图编号</p>
+    </li>
+    <li>
+      <p>方法2:如果想指定一个自定义地图 ID 或地图编号并单独分配一个主题，请执行以下操作:</p>
+      <ul>
+        <li>
+          <p>在 Map ID 字段中键入一个 Map ID，然后按 Enter 键</p>
+        </li>
+        <li>
+          <p>通过 Map No. 的右侧指定一个主题</p>
+        </li>
+        <li>
+          <p>在 Insert Topic 对话框中，搜索主题或从 Content 或 Recently Used 下拉部分中选择主题</p>
+        </li>
+        <li>
+          <p>单击 Insert </p>
+          <p class="Emphasis2">注意:<br/>
+            指定映射文件设置（如果指定）不适用于单独分配的主题或在指定设置之前定义的映射。</p>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <h3>指定映射文件设置</h3>
+  <p>映射文件设置应用于在映射文件编辑器中拖放的主题。 要指定映射文件设置:</p>
+  <ol class="Decimal" data-start="1" xmlns="">
+    <li>
+      <p>在 Output 工具栏中，单击 Map Files </p>
+    </li>
+    <li>
+      <p>在 Map files 面板中，右键单击 Map file，然后单击 Options </p>
+    </li>
+    <li>
+      <p>单击单击 Done </p>
+    </li>
+  </ol>
+  <h3>重命名映射文件</h3>
+  <ol class="Decimal">
+    <li>
+      <p>在 Output 工具栏中，单击 Map Files </p>
+    </li>
+    <li>
+      <p>在 Map files面板中，右键单击 Map file，然后单击 Rename。在报告重命名报告对话框中，为映射文件指定新名称</p>
+    </li>
+    <li>
+      <p>单击 Done</p>
+    </li>
+  </ol>
+  <h3>导入映射文件</h3>
+  <p>可以导入从 Author 和 developer 任务接收的 Map 文件</p>
+  <ol class="Decimal">
+    <li>
+      <p>在 Output 工具栏中，单击 Map Files </p>
+    </li>
+    <li>
+      <p>在 Map Files 面板中，单击 Import </p>
+    </li>
+    <li>
+      <p>在 Import 对话框中，选择要导入的 Map files</p>
+    </li>
+    <li>
+      <p>单击 Open 。RoboHelp 将导入的 Map 文件按文件名的字母顺序放在 Map文件面板中</p>
+    </li>
+  </ol>
+  <h3>导出映射文件</h3>
+  <p>可以导出映射文件，以便与作者和开发人员任务共享它。 导出映射文件:</p>
+  <ol class="Decimal">
+    <li>
+      <p>在 Output 工具栏中，单击 Map Files </p>
+    </li>
+    <li>
+      <p>在 Map files 面板中，右键单击 Map file，然后单击 Export</p>
+    </li>
+    <li>
+      <p>在 Export 对话框中，选择要保存 Map 文件的位置</p>
+    </li>
+    <li>
+      <p>单击 Save </p>
+    </li>
+  </ol>
+  <h3>删除映射文件</h3>
+  <p>要删除映射文件，请按 Delete 。 或执行以下操作:</p>
+  <ol class="Decimal">
+    <li>
+      <p>在 Output 工具栏中，单击 Map Files </p>
+    </li>
+    <li>
+      <p>在 Map Files 面板中，右键单击 Map file，然后单击 Delete</p>
+    </li>
+    <li>
+      <p>在 Confirm 对话框中，单击 Yes 确认删除</p>
+    </li>
+  </ol>
+  <h3>在计算机上找到映射文件</h3>
+  <p>要查看计算机上映射文件的位置，请执行以下操作:</p>
+  <ol class="Decimal">
+    <li>
+      <p>在 Output 工具栏中，单击 Map Files </p>
+    </li>
+    <li>
+      <p>在 Map files 面板中，右键单击某个Map files，然后单击 Show in Exploer</p>
+    </li>
+  </ol>
+  <p>Windows 资源管理器打开以显示映射文件及其位置</p>
+  <h2>生成报告</h2>
+  <p>Adobe RoboHelp 可以生成各种报告来监视，比较和优化项目的内容。你可以自定义报告并显示所需的列，重新排序信息和筛选项目组件，然后快速打印报告或将其作为 csv 文件下载。</p>
+  <h3>报告类型</h3>
+  <p>在 RoboHelp 中生成以下类型的报告:</p>
+  <ul>
+    <li>
+      <p>主题列表<br/>
+        主题列表报告显示项目中的主题列表，并允许你查看和管理主题。 对于每个主题，你可以查看文件名，标题，状态，作者以及它所属的 Content 。 你可以查看包含主题的文件夹，应用于主题及其内容的条件标记，应用于主题的样式表和父页，请参阅报告还添加到主题报告以及上次修改的日期和时间。 你还可以查看某个主题是否有与其关联的索引关键字标记，以及该主题是否包含在搜索中。<br/>
+        在此报告中，你可以编辑，配置主题属性以及删除一个或多个主题。 为此，请选择所需的主题。 右键单击选定的主题，然后选择 Edit 以打开并编辑它们。 你还可以选择 Properties 来配置所选主题的主题属性，或者选择 Delete 来删除主题。</p>
+    </li>
+    <li>
+      <p>项目状态<br/>
+        项目状态报告允许你查看项目中每个主题的状态。 通过这种方式，你可以生成关于已完成，正在进行和准备检查的主题总数的信息。</p>
+    </li>
+    <li>
+      <p>主题属性<br/>
+        主题属性报告允许你查看与项目中的每个主题关联的各种主题属性。 你可以查看主题的状态，作者，条件标记，样式表， Content ，索引关键字以及与之关联的搜索关键字。</p>
+    </li>
+    <li>
+      <p>主题参考<br/>
+        主题引用报告可以查看每个主题中的传入链接。 通过这种方式，你可以查看引导主题的引用。</p>
+    </li>
+    <li>
+      <p>外部参考<br/>
+        外部参考报告可以查看引用到项目外部资 Source 的链接。 通过这种方式，你可以测试指向外部内容的主题中的链接。</p>
+    </li>
+    <li>
+      <p>搜索关键字<br/>
+        搜索关键字报告列出了每个主题中应用的关键字标记。</p>
+    </li>
+    <li>
+      <p>Content<br/>
+        Content 报告列出项目中所选 Content 的详细信息。 你可以查看主题中的链接，标题和文件类型，如书籍或页面，以及它是否隐藏在 Content 输出中。</p>
+    </li>
+    <li>
+      <p>索引<br/>
+        索引报告列出了项目中跨主题应用的所有索引关键字标记。 你可以查看关键字和包含这些关键字的主题。</p>
+    </li>
+    <li>
+      <p>词汇表<br/>
+        术语表报告列出所选术语表中的术语及其定义。 你还可以查看添加术语的主题和文件类型。</p>
+    </li>
+    <li>
+      <p>条件标签<br/>
+        Condition Tags 报告列出项目中的条件标记以及标记名称和颜色。 对于每个标记，可以查看条件标记组，主题和应用条件标记的文件类型。</p>
+    </li>
+    <li>
+      <p>变量<br/>
+        变量报告列出项目中的变量及其值。 对于每个变量及其值，你可以查看使用该变量的主题和文件类型。 通过这种方式，你可以找到在主题中使用的变量，也可以找到在任何主题中都没有使用的变量。 在删除变量之前，可以找到使用该变量的主题，并删除对该变量的引用。</p>
+    </li>
+    <li>
+      <p>片段<br/>
+        代码段报告报告列出了在项目中定义的代码段。 你可以查看主题和每个代码段所使用的文件类型。</p>
+    </li>
+    <li>
+      <p>图像<br/>
+        图像报告列出了项目中使用的图像文件名。 对于每个图像文件名，你可以查看主题和它所在的文件类型。</p>
+    </li>
+    <li>
+      <p>多媒体<br/>
+        多媒体报告列出项目中的多媒体文件名。 对于每个多媒体文件名，你可以查看主题及其所在的文件类型。</p>
+    </li>
+    <li>
+      <p>样式表<br/>
+        使用样式表报告查看项目中的样式表列表。 对于每个样式表，可以查看主题及其所在的文件类型。</p>
+    </li>
+    <li>
+      <p>断开的链路<br/>
+        断开链接报告列出了包含断开链接的主题。 你可以查看项目中每个断开链接的主题，断开链接路径和链接类型。</p>
+    </li>
+    <li>
+      <p>未使用的文件<br/>
+        未使用的文件报告列出项目中未使用的各种文件。 对于每个未使用的文件，你可以查看它的文件名和它所在的文件夹。</p>
+    </li>
+    <li>
+      <p>未引用的主题<br/>
+        未引用主题报告列出项目中未在 Content ，索引，浏览序列或其他主题中链接到的主题。 </p>
+    </li>
+  </ul>
+  <h3>打开报告</h3>
+  <p>要在 RoboHelp 中打开或生成报告，请执行以下步骤:</p>
+  <ol>
+    <li>
+      <p>在打开的项目中，单击工具栏上的 Reports</p>
+    </li>
+    <li>
+      <p>在 Reports 面板中，双击要生成的报告类型</p>
+    </li>
+  </ol>
+  <p>要了解有关 RoboHelp 中各种类型报告的更多信息，请参阅报告类型。</p>
+  <p class="Emphasis2">注意:若要在编辑项目后查看最新报告，请单击工具栏上的报告刷新报告图标。</p>
+  <h3>自定义报告</h3>
+  <p>你可以使用屏幕右侧的 Filters 面板自定义报告。 在此面板中，可以查看报告类型，选择对信息排序的条件，筛选信息以及选择要在报告中查看的列。 要自定义报告，请在 Filters 面板中使用以下选项:</p>
+  <h4>类型</h4>
+  <p>在 Types 下，可以查看打开的报告类型。 若要了解有关 RoboHelp 中报告类型的更多信息，请参阅 Types of report。</p>
+  <h4>排序依据</h4>
+  <p>你可以使用 Order By 下的选项选择条件，以便对报告中的信息进行排序。 根据报告的类型，你可以找到不同的选项，如状态，关键字，主题等。</p>
+  <h4>查看</h4>
+  <p>默认情况下，报告被视为表。 主题引用和项目状态等报告也可以分别以图表和饼图的形式查看。 使用 View 下的选项更改报告的外观。</p>
+  <h4>Filter</h4>
+  <p>在 Filter 下，使用各种项目组件的下拉列表指定报告中的信息。 你还可以在每个下拉列表中选择多个选项。</p>
+  <p>对于索引，术语表，条件标记，变量，代码段，图像，多媒体和样式表报告，还可以选择 Used in &lt; project component &gt;以查看应用项目组件的文件。</p>
+  <h4>列</h4>
+  <p>可以使用列中的选项在报告中添加或删除列。 这些列基于你选择的报告类型。</p>
+  <h3>下载报告</h3>
+  <p>要下载带有 RoboHelp 中应用的设置的报告，请执行以下步骤:</p>
+  <ol class="Decimal">
+    <li>
+      <p>单击 Author 工具栏上的 Report </p>
+    </li>
+    <li>
+      <p>在 Report 面板中，双击要生成的报告类型并将其打开。 或者，单击所需报告类型旁边的 Option ，然后选择报告打开报告</p>
+    </li>
+    <li>
+      <p>要自定义报告，请使用屏幕右侧的 Fillters 面板</p>
+    </li>
+    <li>
+      <p>要下载报告，请单击工具栏上的 Download 。 你还可以单击所需的报告类型，然后选择Download</p>
+    </li>
+  </ol>
+  <h3>打印报告</h3>
+  <p>要使用 RoboHelp 中应用的设置打印报告，请执行以下步骤:</p>
+  <ol class="Decimal">
+    <li>
+      <p>单击 Author 工具栏上的 Report 。</p>
+    </li>
+    <li>
+      <p>在 Report 面板中，双击要生成的报告类型并将其打开。 或者，单击所需报告类型旁边的 Option ，然后选择报告打开报告。</p>
+    </li>
+  </ol>
+
+</body></html>

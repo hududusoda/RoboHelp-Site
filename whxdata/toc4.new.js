@@ -1,0 +1,1 @@
+(function() {    var toc =  [{"name":"Robohelp 官网","type":"item","tilePath":"","url":"更多帮助/更多帮助.htm"}];    window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });    })();

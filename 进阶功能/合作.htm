@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+  <script type="text/javascript" language="JavaScript">
+    //<![CDATA[
+    function reDo() {
+      if (innerWidth != origWidth || innerHeight != origHeight)
+        location.reload();
+    }
+    if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+      origWidth = innerWidth;
+      origHeight = innerHeight;
+      onresize = reDo;
+    }
+    onerror = null;
+  //]]>
+  </script>
+  <style type="text/css">/*<![CDATA[*/
+
+    < !-- div.WebHelpPopupMenu {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      z-index: 4;
+      visibility: hidden;
+    }
+
+    p.WebHelpNavBar {
+      text-align: right;
+    }
+
+    -->
+  
+/*]]>*/</style>
+
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "..";
+    gCommonRootRelPath = "..";
+    gTopicId = "3.0_8";
+  
+//]]></script>
+
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2019"/>
+  <title>合作</title>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2019"/>
+  <title>合作</title>
+  <meta name="topic-status" content="Draft"/>
+  <link rel="stylesheet" type="text/css" href="../assets/css/default.css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header" onclick="rh._.goToFullLayout()">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="合作">
+        <span>合作</span>
+      </div>
+      <div class="gotohome" title="按一下此处即可查看此页面的完整内容">
+        <span>按一下此处即可查看此页面的完整内容</span>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+  <h1>合作</h1>
+  <p class="Normal-Indent"> </p>
+  <p>本章节介绍如何使用 Adobe RoboHelp 的合作进阶功能，包括对 Git 和 SharePoint Online 的使用。</p>
+  <h2>使用 Git 进行合作</h2>
+  <h3>连接到 Git 的前提</h3>
+  <ol>
+    <li>
+      <p>下载并安装 Git。<a href="https://git-scm.com/download/win">单击此处</a>下载 Windows 版 Git。有关更多信息，请参见 <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">Git 帮助</a></p>
+    </li>
+    <li>
+      <p>调整 PATH 环境变量，以便可以从 Windows 命令提示符下使用 Git 和可选的 UNIX 工具。为此，请在 Git 安装程序中选择以下选项：<br/>
+        <img src="../assets/images/合作/git_install.png" style="width: 100%; max-width: 400px;"/><br/>
+        PATH环境变量必须包含以下值：<br/>
+        C:\Program Files\Git\usr\bin<br/>
+        <img src="../assets/images/合作/git_path_var.png" style="width: 100%; max-width: 400px;"/></p>
+    </li>
+    <li>
+      <p>在 RoboHelp 中注册外部 diff/merge 应用程序：</p>
+      <ul>
+        <li>
+          <p>选择 Edit &gt; Preferences</p>
+        </li>
+        <li>
+          <p>打开 Version Control 选项卡</p>
+        </li>
+        <li>
+          <p>在 External Diff/Merge Application 字段中，点击 <img alt="" src="https://helpx.adobe.com/content/dam/help/en/robohelp/using/git/jcr_content/main-pars/procedure_1608468501/proc_par/step_2/step_par/procedure/proc_par/step_2/step_par/image/select_files_icon.png" style="max-width: 100%;"/>选择外部 diff/merge 应用程序<br/>
+            通过在命令提示符下运行以下命令，验证Git支持您的应用程序：<br/>
+            git mergetool --tool-help</p>
+        </li>
+        <li>
+          <p>点击 Done 完成注册</p>
+        </li>
+      </ul>
+    </li>
+  </ol>
+  <h3>创建 Git 连接配置文件</h3>
+  <p>要将 RoboHelp 与 Git 连接，需要创建 Git 连接配置文件。</p>
+  <ol>
+    <li>
+      <p>Git 服务器上必须存在一个存储库，你可以从 RoboHelp 连接到该存储库。要创建存储库，请遵循GitHub的说明</p>
+    </li>
+    <li>
+      <p>在 Robohelp 中选择 Collaborate &gt; New Connection</p>
+    </li>
+    <li>
+      <p>在 Connection Profiles 对话框中，为连接配置文件指定名称</p>
+    </li>
+    <li>
+      <p>从 Version Control 下拉列表中，选择 Git</p>
+    </li>
+    <li>
+      <p>在 Repository URL 字段中，指定远程存储库的 SSH 或 HTTPS URL</p>
+    </li>
+    <li>
+      <p>在 User ID 字段中，明确对指定 Git 存储库具有读/写访问权限的用户帐户的名称</p>
+    </li>
+    <li>
+      <p>在 Branch 字段中，明确服务器上的分支名称。默认分支名称为 master</p>
+    </li>
+    <li>
+      <p>在 Local Path 字段中，明确计算机上映射到服务器上存储库的路径</p>
+    </li>
+  </ol>
+  <h3>从Git服务器克隆项目</h3>
+  <ol>
+    <li>
+      <p>在 RoboHelp 中，点击 Collaborate &gt; Open Connection 并选择 Git 连接配置文件。该存储库将被克隆到连接配置文件中指定的本地路径</p>
+    </li>
+    <li>
+      <p>在 Open 对话框中，选择一个 RoboHelp 项目文件（.rhpj），确认打开后 RoboHelp 将打开项目文件</p>
+    </li>
+  </ol>
+  <h3>在版本控制下处理文件</h3>
+  <h4>使用 commit 提交更改</h4>
+  <p>要将更改提交到本地存储库，请选择 Collaborate &gt; Commit。 将打开 commit 对话框。</p>
+  <h4>使用 push 推送更改</h4>
+  <p>要将待提交的提交推送到你的 Git 服务器，请选择 Collaborate&gt; Push。如果另一个用户更新了 Git 服务器上的存储库，则推送操作将失败。在这种情况下，请从服务器上的存储库中提取最新版本，然后重试推送操作。</p>
+  <h4>使用 pull 提取更改</h4>
+  <ol>
+    <li>
+      <p>要同步本地存储库以匹配服务器上的存储库，请选择 Collaborate&gt; Pull。如果某些本地文件包含尚未提交到本地存储库的编辑，并且这些文件已在服务器上更新，则 pull 操作将失败。在这种情况下，请先 commit 更改</p>
+    </li>
+    <li>
+      <p>成功提取更改后，将同时包含本地和远程提交的文件合并。如果合并失败，则会发生合并冲突，必须解决。要解决合并冲突，请选择 Collaborate &gt; Commit</p>
+    </li>
+    <li>
+      <p>在 Commit 对话框中，包含合并冲突的文件在 Action 列中表示为<img alt="" src="https://helpx.adobe.com/content/dam/help/en/robohelp/using/git/jcr_content/main-pars/procedure_272482897/proc_par/step_2/step_par/image/mergeconflict.png" style="width: 100%; max-width: 96px;"/> </p>
+    </li>
+    <li>
+      <p>单击 <img alt="" src="https://helpx.adobe.com/content/dam/help/en/robohelp/using/git/jcr_content/main-pars/procedure_272482897/proc_par/step_2/step_par/image/merge_icon.png" style="max-width: 100%;"/> 以使用外部 diff/merge 应用程序合并冲突</p>
+    </li>
+  </ol>
+  <h3>将项目添加到 Git 服务器</h3>
+  <ol>
+    <li>
+      <p>添加一个项目，选择 Collaborate &gt; Add Project 并选择一个 Git 连接配置文件</p>
+    </li>
+    <li>
+      <p>Commit 所需文件</p>
+    </li>
+    <li>
+      <p>Push 提交的文件</p>
+    </li>
+  </ol>
+  <h3>删除 Git 连接</h3>
+  <ol>
+    <li>
+      <p>要从当前 RoboHelp 项目中删除 Git 连接，请选择 Collaborate &gt; Remove Connection</p>
+    </li>
+    <li>
+      <p>如果还要删除本地存储库，请在 Confirm 对话框中选择 Delete any source control information from the local folder also 字段</p>
+    </li>
+  </ol>
+  <h2>使用 SharePoint Online 进行合作</h2>
+  <h3>连接到 SharePoint Online 的前提</h3>
+  <p>如果在企业防火墙的保护下工作，请将以下 URL 列入白名单：</p>
+  <ul>
+    <li>
+      <p><a href="https://graph.microsoft.com/">https://graph.microsoft.com</a></p>
+    </li>
+    <li>
+      <p><a href="http://www.adobe.com/">http://www.adobe.com</a></p>
+    </li>
+    <li>
+      <p><a href="https://login.microsoftonline.com/common/oauth2">https://login.microsoftonline.com/common/oauth2</a></p>
+    </li>
+  </ul>
+  <h3>创建 SharePoint Online 连接配置文件</h3>
+  <ol>
+    <li>
+      <p>在 Robohelp 中选择 Collaborate &gt; New Connection</p>
+    </li>
+    <li>
+      <p>在 Connection Profiles 对话框中，为连接配置文件指定名称</p>
+    </li>
+    <li>
+      <p>从 Version Control 下拉列表中，选择 SharePoint Online</p>
+    </li>
+    <li>
+      <p>在 SharePoint Site URL 字段中，指定 SharePoint 网站的 URL，比如：</p>
+      <ul>
+        <li>
+          <p>&lt;tenant&gt;.sharepoint.com</p>
+        </li>
+        <li>
+          <p>&lt;tenant-my&gt;.sharepoint.com</p>
+        </li>
+        <li>
+          <p>如果你的 SharePoint 网站是较大网站的子网站，则 URL 可能是：<br/>
+            &lt;tenant&gt;.sharepoint.com/sites/&lt;subsite&gt;</p>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <p>点击 Login</p>
+    </li>
+    <li>
+      <p>在 Sign in 窗口中输入身份验证信息，并接受 RoboHelp 要求的权限<br/>
+        <img src="../assets/images/合作/sharepoint_permissions.png" style="width: 100%; max-width: 374px;"/></p>
+    </li>
+    <li>
+      <p>点击 Save 保存配置文件</p>
+    </li>
+  </ol>
+  <h3>从 SharePoint Online下载项目</h3>
+  <ol>
+    <li>
+      <p>在 RoboHelp 中，点击 Collaborate &gt; Open Connection 并选择 SharePoint Online 连接配置文件</p>
+    </li>
+    <li>
+      <p>浏览并选择一个 RoboHelp 项目文件，然后单击 Select</p>
+    </li>
+    <li>
+      <p>在 Repository Details 对话框中，指定要在其中下载项目的本地路径，然后单击 Open。 RoboHelp 将下载并打开该项目</p>
+    </li>
+  </ol>
+  <h3>在版本控制下处理文件</h3>
+  <ol>
+    <li>
+      <p>默认情况下，文件以只读方式下载。要使文件可写，请在 Contents 面板中右键单击该文件，然后单击 Checkout；</p>
+    </li>
+    <li>
+      <p>要提交对 SharePoint Online 的更改，请选择 Collaborate &gt; Check In。将打开 check-in 对话框</p>
+    </li>
+    <li>
+      <p>点击 Check-in。提交成功后，RoboHelp 将显示一条成功消息。你的文件版本将成为 SharePoint Online 上的最新版本</p>
+    </li>
+    <li>
+      <p>在每次 check-in 和 check-out 操作期间，SharePoint Online 上的文件状态都会自动刷新。要手动获取最新状态，请选择Collaborate &gt; Refresh Status</p>
+    </li>
+    <li>
+      <p>要将本地文件与 SharePoint Online 中的最新版本同步，请选择 Collaborate &gt; Get Latest Version</p>
+    </li>
+  </ol>
+  <h3>将项目添加到 SharePoint Online</h3>
+  <ol>
+    <li>
+      <p>在 SharePoint Online 上创建一个文件夹，您要在其中添加当前项目</p>
+    </li>
+    <li>
+      <p>在 RoboHelp 中，选择  Collaborate &gt; Add Project，然后选择一个 SharePoint Online 连接配置文件</p>
+    </li>
+    <li>
+      <p>在文件浏览器中，选择在步骤1中创建的文件夹。Check-in 对话框打开</p>
+    </li>
+    <li>
+      <p>按照“在版本控制下处理文件”中所述提交所需文件</p>
+    </li>
+  </ol>
+  <h3>删除 SharePoint Online 连接</h3>
+  <ol>
+    <li>
+      <p>要从当前 RoboHelp 项目中删除 SharePoint Online 连接，请选择 Collaborate &gt; Remove Connection</p>
+    </li>
+    <li>
+      <p>在 Confirm 对话框中，单击 OK 以删除连接</p>
+    </li>
+  </ol>
+  <p><span></span></p>
+
+</body></html>

@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+  <script type="text/javascript" language="JavaScript">
+    //<![CDATA[
+    function reDo() {
+      if (innerWidth != origWidth || innerHeight != origHeight)
+        location.reload();
+    }
+    if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+      origWidth = innerWidth;
+      origHeight = innerHeight;
+      onresize = reDo;
+    }
+    onerror = null;
+  //]]>
+  </script>
+  <style type="text/css">/*<![CDATA[*/
+
+    < !-- div.WebHelpPopupMenu {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      z-index: 4;
+      visibility: hidden;
+    }
+
+    p.WebHelpNavBar {
+      text-align: right;
+    }
+
+    -->
+  
+/*]]>*/</style>
+
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "..";
+    gCommonRootRelPath = "..";
+    gTopicId = "2.0_2";
+  
+//]]></script>
+
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2019"/>
+  <title>创建项目</title>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2019"/>
+  <title>创建项目</title>
+  <meta name="topic-status" content="Draft"/>
+  <link rel="stylesheet" type="text/css" href="../assets/css/default.css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header" onclick="rh._.goToFullLayout()">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="创建项目">
+        <span>创建项目</span>
+      </div>
+      <div class="gotohome" title="按一下此处即可查看此页面的完整内容">
+        <span>按一下此处即可查看此页面的完整内容</span>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+  <h1>
+    <font face="宋体"><span style="font-size: 22px;">创建项目</span></font>
+  </h1>
+  <p> </p>
+  <p>项目是 Adobe RoboHelp 的核心，topic 是项目的基本元素。用 Robohelp 创作内容包括：向项目中添加 topic 、添加全局导航、配置项目属性、生成所需文件。RoboHelp 的经典输出是一种或多种格式的帮助文档，例如响应 HTML5 和 PDF。RoboHelp 项目文件的扩展名为.rhpj。</p>
+  <p>除项目文件外，RoboHelp 还有各种项目组件，例如 topic、table of contents、variables、skin 和 master page。用户无需直接操作项目文件或组件文件，在 RoboHelp 中的任何编辑行为都会自动更新到相应文件。</p>
+  <h2>了解项目组件</h2>
+  <p>        下表列出了 RoboHelp 项目的各个组件：</p>
+  <table border="1" cellpadding="1" cellspacing="1" class="blue" style="border-collapse: collapse; width: 730px;">
+    <colgroup>
+      <col style="width: 213px;"/>
+      <col style="width: 498px;"/>
+    </colgroup>
+    <tbody>
+      <tr>
+        <td>组件名</td>
+        <td style="">描述</td>
+      </tr>
+      <tr>
+        <td style="text-align: center">
+          <p class="TableText" style="text-align: center">Topic</p>
+        </td>
+        <td style="">
+          <p class="TableText">RoboHelp 中内容结构的基本元素。topic 可以包含文本、多媒体（如图像和视频）、链接等。设计 topic 主题时请确保其易于重用，避免 topic 太长或太短。</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align: center">
+          <p class="TableText" style="text-align: center">文件夹和子文件夹</p>
+        </td>
+        <td style="">
+          <p class="TableText">用于组织项目内容。创建文件夹和子文件夹来组织 topic 和 assets，例如图像，视频和样式表。</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align: center">
+          <p class="TableText" style="text-align: center">图像和多媒体</p>
+        </td>
+        <td style="">
+          <p class="TableText">可以在顶部工具栏选择向 topic 中插入图像和多媒体，以丰富内容。</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align: center">
+          <p class="TableText"> </p>
+          <p class="TableText" style="text-align: center">Table of contents (TOC)</p>
+        </td>
+        <td style="">
+          <p class="TableText">帮助呈现项目内容的层次结构，创作过程中可以浏览 TOC 并选择文件夹或主题进行查看和编辑。在发布的文档中，最终用户可以使用 TOC 快速跳转、查看所选 topic 的内容。</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align: center">
+          <p class="TableText" style="text-align: center">索引 (Index)</p>
+        </td>
+        <td style="">
+          <p class="TableText">允许最终用户使用指定的关键字或短语在帮助系统中导航。这些关键字或短语需要与特定主题相关联。索引可以包含多个级别的关键字以及对其他关键字的交叉引用。</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align: center">
+          <p class="TableText" style="text-align: center">Glossary</p>
+        </td>
+        <td style="">
+          <p class="TableText">显示文档中的术语列表。Robohelp 支持设置条件筛选术语、链接到项目外部的词汇表文件、在最后生成的文档中包含多个词汇表文件。</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align: center">
+          <p class="TableText" style="text-align: center">Condition tags</p>
+        </td>
+        <td style="">
+          <p class="TableText">定义内容的子集，并在同一项目中生成多个文档，便于针对不同需求（例如不同的目标受众和交付格式）管理内容。</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align: center">
+          <p class="TableText"><span> </span></p>
+          <p class="TableText"> </p>
+          <p class="TableText" style="text-align: center">Variables</p>
+        </td>
+        <td style="">
+          <p class="TableText">在此存储用于项目多处的内容，此处一更新，所有包含相同内容的项目组件均会改变，有助于快速进行全局更新并确保一致性。一个很好的用例是存储诸如产品名称和发布日期之类的信息。</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align: center">
+          <p class="TableText" style="text-align: center">Snippets</p>
+        </td>
+        <td style="">
+          <p class="TableText">创建和管理复用内容。用 <span>Global snippets<span> </span></span>识别指定内容，仅需一步即可更改所有 topic 的相应部分，从而节省时间并促进有效的内容更改。</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align: center">
+          <p class="TableText"> </p>
+          <p class="TableText" style="text-align: center">Master pages</p>
+        </td>
+        <td style="">
+          <p class="TableText">提供用于 topic 布局的模板，并帮助控制内容样式。在 topic 创建过程中可将master page 应用于所有 topic 或正在创建编辑中的 topic，然后在预览模式下查看效果。</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align: center">
+          <p class="TableText"> </p>
+          <p class="TableText" style="text-align: center">Browse sequences</p>
+        </td>
+        <td style="">
+          <p class="TableText">文件的线性列表，可用于从逻辑上导航到下一个相关 topic。支持的操作有添加、编辑、删除。在 b<span>rowse sequences 中</span>，可以在“Contents”面板和 TOC 中拖动 topic主题以更改顺序。</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align: center">
+          <p class="TableText" style="text-align: center">报告 (Report)</p>
+        </td>
+        <td style="">
+          <p class="TableText">生成各种报告以查看、分享没有连上的链接、未使用的文件、缺少的 topic 等。</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align: center">
+          <p class="TableText" style="text-align: center">导出预设</p>
+        </td>
+        <td style="">
+          <p class="TableText">设置输出格式和内容布局，还可以设置输出文档的搜索引擎配置，例如在搜索框中启用自动更正，显示词汇表中的定义等。</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align: center">
+          <p class="TableText" style="text-align: center">Skins</p>
+        </td>
+        <td style="">
+          <p class="TableText">设置 HTML 输出的外观。</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align: center">
+          <p class="TableText" style="text-align: center">标记语言 (Labels)</p>
+        </td>
+        <td style="">
+          <p class="TableText">可以编辑和删除语言标记，也可以撤消重做，还可以将语言标记导出为 XML 进行本地化，并导入特定语言的翻译副本。</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align: center">
+          <p class="TableText"><span> </span></p>
+          <p class="TableText"> </p>
+          <p class="TableText" style="text-align: center">Variable sets</p>
+        </td>
+        <td style="">
+          <p class="TableText">通过覆盖 variable 的值来自定义 variables 用于特定输出。在新创建的variable set 中，列出了项目中的所有 variable。在此列表中，可以覆盖原值为特定输出定制的 variable。可以创建不同的 variable set，以针对不同的特定输出。</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align: center">
+          <p class="TableText"><span> </span></p>
+          <p class="TableText"> </p>
+          <p class="TableText" style="text-align: center">条件表达式</p>
+          <p class="TableText" style="text-align: center">(Condition expressions)</p>
+        </td>
+        <td style="">
+          <p class="TableText">用于控制和标记输出文档中要包含或排除的项目内容。根据表达式中使用的条件标签，相应的源内容将包含在最终输出的文档中。可以用 OR、AND 和NOT 运算符在表达式中连接各种标记组合，以自定义输出内容。条件表达式不会与源内容一起发布，也不会出现在最终的输出文档中。</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align: center">
+          <p class="TableText" style="text-align: center">Dynamic content filters</p>
+        </td>
+        <td style="">
+          <p class="TableText">控制输出文档中内容的显示。最终用户可以选择特定的 filter 来查看匹配内容并隐藏不相关内容，有助于快速检索和使用特定信息，而不用遍历整个文档。</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align: center">
+          <p class="TableText"><span> </span></p>
+          <p class="TableText"> </p>
+          <p class="TableText" style="text-align: center">停用词 (Stop words)</p>
+        </td>
+        <td style="">
+          <p class="TableText">向停用词列表添加常用又无实义的词，例如“ a”或“ the”。在搜索过程中，RoboHelp 会忽略停用词表中的词，以显示最佳且相关的搜索结果。RoboHelp 支持添加、编辑和删除不同语种的停用词，且为每种语言都创建了一个停用词列表文件。</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align: center">
+          <p class="TableText"> </p>
+          <p class="TableText" style="text-align: center">同义词 (Synonyms)</p>
+        </td>
+        <td style="">
+          <p class="TableText">可以为一个词定义多个同义词，应对搜索时的多词同义。例如，将“光标”和“鼠标”定义为同义词，检索“鼠标”时，RoboHelp 将返回所有包含“光标”的 topic，并在文内高亮显示该词。RoboHelp 支持添加、编辑和删除不同语种的同义词，且为每种语言都创建了一个同义词列表文件。</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align: center">
+          <p class="TableText" style="text-align: center">样式表 (Style sheets)</p>
+        </td>
+        <td style="">
+          <p class="TableText">存储和定义用于控制内容外观的样式。为内容的不同元素（例如，不同的标题级别）定义样式，然后在项目或 topic 级别应用样式表。</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>新建项目</h2>
+  <ol class="Decimal">
+    <li>
+      <p><span>单击 </span><span style="font-weight:bold;">File &gt; New Project</span><span> 或用键入<span> </span></span><span style="font-weight:"><span style="font-weight:bold;">Alt+Ctrl+N</span>，</span><span>弹出新建项目的对话框</span></p>
+    </li>
+    <li>
+      <p>在对话框中设置项目名称、语言和存储地址</p>
+    </li>
+    <li>
+      <p><span><span>单击<span style="font-weight:bold;"> </span></span></span><span style="font-weight:"><span style="font-weight:bold;">Create</span>，完成创建</span></p>
+    </li>
+  </ol>
+  <h2>保存项目</h2>
+  <ul class="Disc">
+    <li>
+      <p><span>单击 </span><span style="font-weight:bold;">File &gt; Save All</span><span> 或键入<span style="font-weight:bold;"> </span></span><span><span style="font-weight:bold;">Ctrl+S</span>，保存所有项目文件更改</span></p>
+    </li>
+    <li>
+      <p>单击工具栏左上方的 <img src="https://helpx.adobe.com/content/dam/help/en/robohelp/using/Save%20icon_RH.png" style="box-sizing: border-box; border: 0px; margin: 0px; padding: 0px; outline: 0px; font-weight: 400; font-style: normal; font-size: 16px; font-family: adobe-clean, HelveticaNeue-light, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; max-width: 18px; color: rgb(51, 51, 51); font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; width: 100%;"/>，保存所有项目文件更改</p>
+    </li>
+    <li>
+      <p><span>单击 </span><span style="font-weight:bold;">File &gt; Save</span><span> 或键入<span> </span></span><span><span style="font-weight:bold;">Alt+Ctrl+S</span>，保存当前 topic 更改</span></p>
+    </li>
+  </ul>
+  <h2>设置项目配置</h2>
+  <p>项目创建后，可以更改项目名称、语言，设置 topic 状态、颜色、标签分组和版本控制。</p>
+  <ol class="Decimal">
+    <li>
+      <p>启动 RoboHelp 并打开项目，单击<span style="font-weight:bold;"> File &gt; Project settings</span> 或键入<span> </span><span style="font-weight:bold;">Ctrl+Shift+/</span></p>
+    </li>
+    <li>
+      <p><a name="step_par_text"></a></p>
+      <p>在项目配置对话框中的<span> </span><span>General、Topic Status、Colors 等选项卡中进行设置</span></p>
+      <table border="1" cellpadding="1" cellspacing="1" class="blue" style="border-collapse: collapse; width: 677px;">
+        <colgroup>
+          <col style="width: 198px;"/>
+          <col style="width: 460px;"/>
+        </colgroup>
+        <tbody>
+          <tr>
+            <td style="">选项卡</td>
+            <td style="">操作</td>
+          </tr>
+          <tr>
+            <td style="">
+              <p class="TableText"> </p>
+              <p class="TableText"> </p>
+              <p class="TableText"> </p>
+              <p class="TableText" style="text-align: center">General</p>
+            </td>
+            <td style="">
+              <p class="TableText"><span>• 在 <span style="font-weight:bold;">Project Title</span> 一栏中编辑项目名称</span></p>
+              <p class="TableText"><span>• </span>在 <span style="font-weight:bold;">Language</span> 一栏中点击<img src="https://helpx.adobe.com/content/dam/help/icons/Drop-down-arrow.png" style="font-family: &quot;Verdana, sans-serif&quot;; font-size: 11pt; text-indent: 2em; max-width: 100%;"/><span style="font-family: &quot;Verdana, sans-serif&quot;; font-size: 11pt; text-indent: 2em;"> 选择项目语言</span></p>
+              <p class="TableText"><span>• </span>在 <span style="font-weight:bold;">Default </span><span><span style="font-weight:bold;">Stylesheet</span> 一栏中点击</span> <img src="https://helpx.adobe.com/content/dam/help/icons/Drop-down-arrow.png" style="font-family: &quot;Verdana, sans-serif&quot;; font-size: 11pt; text-indent: 2em; max-width: 100%;"/><span style="font-family: &quot;Verdana, sans-serif&quot;; font-size: 11pt; text-indent: 2em;"> 选择项目所需的样式表</span></p>
+              <p class="TableText"><span>• </span>在 <span><span style="font-weight:"><span style="font-weight:bold;">Default Word/FrameMaker Import Settings</span> 一栏中</span>选择导入 Word或FrameMaker 文件时的配置信息</span></p>
+              <p class="TableText"><span>• </span>勾选 <span><span style="font-weight:bold;">Do not allow inline formatting</span> 以避免使用新的内联样式，保持之前的内联样式不变</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="">
+              <p class="TableText" style="text-align: center">Topic Status</p>
+            </td>
+            <td style="">
+              <p class="TableText">选择 topic 状态，例如<strong><span style="font-weight:bold;"> </span></strong><span><strong>Draft</strong>、<strong>I</strong></span><span><span><strong>n Progress</strong></span> 和 </span><span><span style="font-weight:bold;">Ready for Review</span> 来提示 topic 的创作阶段，支持自定义、重命名、删除、排序状态</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="">
+              <p class="TableText" style="text-align: center">Colors</p>
+            </td>
+            <td style="">
+              <p class="TableText">设置项目内容需要的颜色，支持添加、删除、重命名现有颜色列表的对象</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="">
+              <p class="TableText" style="text-align: center">Tag Groups</p>
+            </td>
+            <td style="">
+              <p class="TableText">对 Condition tags 进行分组管理，支持添加、删除、重命名现有分组，但<span>如果标签组包含了Condition tags，则无法删除</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="">
+              <p class="TableText" style="text-align: center">Version Control</p>
+            </td>
+            <td style="">
+              <p class="TableText">查看项目文件路径和版本控制、协作方式 </p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </li>
+    <br/>
+    <li>
+      <p> 输入所需的设置后，点击 <span style="font-weight:bold;">Done</span></p>
+    </li>
+  </ol>
+
+</body></html>
